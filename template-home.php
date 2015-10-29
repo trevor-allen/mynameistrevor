@@ -22,6 +22,9 @@ get_header('home'); ?>
         	<?php if ( get_theme_mod( 'mynameistrevor_home_title' ) ) : ?>
              	<h1><?php echo wp_kses_post( get_theme_mod( 'mynameistrevor_home_title' )); ?></h1>
             <?php endif; ?>
+			<?php if ( get_theme_mod( 'mynameistrevor_home_subtitle' ) ) : ?>
+				<h4><?php echo wp_kses_post( get_theme_mod( 'mynameistrevor_home_subtitle' )); ?></h4>
+			<?php endif; ?>
 
             <ul class="home-details">
             	<li>
@@ -40,7 +43,7 @@ get_header('home'); ?>
                     <?php endif; ?>
 
                     <?php if ( get_theme_mod( 'mynameistrevor_home_email' ) ) : ?>
-                		<a href="mailto:<?php echo is_email( get_theme_mod( 'mynameistrevor_home_email' )); ?>" target="_blank"><?php echo esc_html( get_theme_mod( 'mynameistrevor_home_email' )); ?></a> 
+                		<a href="mailto:<?php echo is_email( get_theme_mod( 'mynameistrevor_home_email' )); ?>" target="_blank"><?php echo esc_html( get_theme_mod( 'mynameistrevor_home_email' )); ?></a>
                     <?php endif; ?>
                 </li>
 
@@ -109,7 +112,7 @@ get_header('home'); ?>
             <?php if ( get_theme_mod( 'mynameistrevor_about_me_button_url' ) ) : ?>
             	<a href="<?php echo esc_url( get_page_link( get_theme_mod('mynameistrevor_about_me_button_url'))); ?>">
                 	<?php if ( get_theme_mod( 'mynameistrevor_about_me_button_text' ) ) : ?>
-            			<button class="mynameistrevor-about-button"><?php echo wp_kses_post( get_theme_mod( 'mynameistrevor_about_me_button_text' )); ?></button> 
+            			<button class="mynameistrevor-about-button"><?php echo wp_kses_post( get_theme_mod( 'mynameistrevor_about_me_button_text' )); ?></button>
                     <?php endif; ?>
                 </a>
             <?php endif; ?>

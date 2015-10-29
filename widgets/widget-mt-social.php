@@ -2,73 +2,44 @@
 
 
 
-class hired_social extends WP_Widget { 
-	
+class hired_social extends WP_Widget {
 // constructor
 
     function hired_social() {
 
 		$widget_ops = array('classname' => 'hired_social_widget', 'description' => esc_html__( 'Drag this widget to the Social Widget Area.', 'hired') );
-
-        parent::__construct(false, $name = esc_html__('MT - Social Icons', 'hired'), $widget_ops);
-
+	        parent::__construct(false, $name = esc_html__('MT - Social Icons', 'hired'), $widget_ops);
 		$this->alt_option_name = 'hired_social_widget';
 
-		
-
-		add_action( 'save_post', array($this, 'flush_widget_cache') ); 
-
-		add_action( 'deleted_post', array($this, 'flush_widget_cache') ); 
-
-		add_action( 'switch_theme', array($this, 'flush_widget_cache') );	 	
-
+		add_action( 'save_post', array($this, 'flush_widget_cache') );
+		add_action( 'deleted_post', array($this, 'flush_widget_cache') );
+		add_action( 'switch_theme', array($this, 'flush_widget_cache') );
     }
-
-	
 
 	// widget form creation
 
 	function form($instance) {
-
-
-
 	// Check values
 
-		
-		
 		$social_fb_link 	= isset( $instance['social_fb_link'] ) ? esc_url( $instance['social_fb_link'] ) : '';
-		
+		$social_github_link 	= isset( $instance['social_github_link'] ) ? esc_url( $instance['social_github_link'] ) : '';
 		$social_twitter_link 	= isset( $instance['social_twitter_link'] ) ? esc_url( $instance['social_twitter_link'] ) : '';
-		
 		$social_linked_link 	= isset( $instance['social_linked_link'] ) ? esc_url( $instance['social_linked_link'] ) : '';
-		
 		$social_google_link 	= isset( $instance['social_google_link'] ) ? esc_url( $instance['social_google_link'] ) : '';
-		
 		$social_instagram_link 	= isset( $instance['social_instagram_link'] ) ? esc_url( $instance['social_instagram_link'] ) : '';
-		
 		$social_flickr_link 	= isset( $instance['social_flickr_link'] ) ? esc_url( $instance['social_flickr_link'] ) : '';
-		
 		$social_pinterest_link 	= isset( $instance['social_pinterest_link'] ) ? esc_url( $instance['social_pinterest_link'] ) : '';
-		
 		$social_youtube_link 	= isset( $instance['social_youtube_link'] ) ? esc_url( $instance['social_youtube_link'] ) : '';
-		
 		$social_vimeo_link 	= isset( $instance['social_vimeo_link'] ) ? esc_url( $instance['social_vimeo_link'] ) : '';
-		
 		$social_tumblr_link 	= isset( $instance['social_tumblr_link'] ) ? esc_url( $instance['social_tumblr_link'] ) : '';
-		
 		$social_dribbble_link 	= isset( $instance['social_dribbble_link'] ) ? esc_url( $instance['social_dribbble_link'] ) : '';
-		
 		$social_rss_link 	= isset( $instance['social_rss_link'] ) ? esc_url( $instance['social_rss_link'] ) : '';
-		
-		$social_url_path	= isset( $instance['social_url_path'] ) ? (bool) $instance['social_url_path'] : false; 
-
-
+		$social_url_path	= isset( $instance['social_url_path'] ) ? (bool) $instance['social_url_path'] : false;
 	?>
-	
 
 
 	<!-- facebook -->
-    
+
     <p>
 
 	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_fb_link')); ?>"><?php esc_html_e('Facebook URL:', 'hired'); ?></label>
@@ -77,8 +48,18 @@ class hired_social extends WP_Widget {
 
 	</p>
 
+        <!-- github -->
+
+    <p>
+
+        <label for="<?php echo sanitize_text_field( $this->get_field_id('social_github_link')); ?>"><?php esc_html_e('Github URL:', 'hired'); ?></label>
+
+	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('social_github_link')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('social_github_link')); ?>" type="text" value="<?php echo esc_url( $social_github_link ); ?>" />
+
+    </p>
+
 	<!-- twitter -->
-    
+
     <p>
 
 	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_twitter_link')); ?>"><?php esc_html_e('Twitter URL:', 'hired'); ?></label>
@@ -86,9 +67,9 @@ class hired_social extends WP_Widget {
 	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('social_twitter_link')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('social_twitter_link')); ?>" type="text" value="<?php echo esc_url( $social_twitter_link ); ?>" />
 
 	</p>
-    
-    <!-- linkedin --> 
-    
+
+    <!-- linkedin -->
+
     <p>
 
 	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_linked_link')); ?>"><?php esc_html_e('LinkedIn URL:', 'hired'); ?></label>
@@ -98,7 +79,7 @@ class hired_social extends WP_Widget {
 	</p>
 
 	 <!-- google -->
-    
+
     <p>
 
 	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_google_link')); ?>"><?php esc_html_e('Google URL:', 'hired'); ?></label>
@@ -106,9 +87,9 @@ class hired_social extends WP_Widget {
 	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('social_google_link')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('social_google_link')); ?>" type="text" value="<?php echo esc_url( $social_google_link ); ?>" />
 
 	</p>
-    
+
     <!-- instagram -->
-    
+
     <p>
 
 	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_instagram_link')); ?>"><?php esc_html_e('Instagram URL:', 'hired'); ?></label>
@@ -116,9 +97,9 @@ class hired_social extends WP_Widget {
 	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('social_instagram_link')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('social_instagram_link')); ?>" type="text" value="<?php echo esc_url( $social_instagram_link ); ?>" />
 
 	</p>
-    
+
     <!-- flickr -->
-    
+
     <p>
 
 	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_flickr_link')); ?>"><?php esc_html_e('Flickr URL:', 'hired'); ?></label>
@@ -126,9 +107,9 @@ class hired_social extends WP_Widget {
 	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('social_flickr_link')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('social_flickr_link')); ?>" type="text" value="<?php echo esc_url( $social_flickr_link ); ?>" />
 
 	</p>
-	
+
     <!-- pinterest -->
-    
+
     <p>
 
 	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_pinterest_link')); ?>"><?php esc_html_e('Pinterest URL:', 'hired'); ?></label>
@@ -136,9 +117,9 @@ class hired_social extends WP_Widget {
 	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('social_pinterest_link')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('social_pinterest_link')); ?>" type="text" value="<?php echo esc_url( $social_pinterest_link ); ?>" />
 
 	</p>
-	
+
     <!-- youtube -->
-    
+
     <p>
 
 	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_youtube_link')); ?>"><?php esc_html_e('Youtube URL:', 'hired'); ?></label>
@@ -146,9 +127,9 @@ class hired_social extends WP_Widget {
 	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('social_youtube_link')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('social_youtube_link')); ?>" type="text" value="<?php echo esc_url( $social_youtube_link ); ?>" />
 
 	</p>
-    
+
     <!-- vimeo -->
-    
+
     <p>
 
 	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_vimeo_link')); ?>"><?php esc_html_e('Vimeo URL:', 'hired'); ?></label>
@@ -156,9 +137,9 @@ class hired_social extends WP_Widget {
 	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('social_vimeo_link')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('social_vimeo_link')); ?>" type="text" value="<?php echo esc_url( $social_vimeo_link ); ?>" />
 
 	</p>
-    
+
     <!-- tumblr -->
-    
+
     <p>
 
 	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_tumblr_link')); ?>"><?php esc_html_e('Tumblr URL:', 'hired'); ?></label>
@@ -166,9 +147,9 @@ class hired_social extends WP_Widget {
 	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('social_tumblr_link')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('social_tumblr_link')); ?>" type="text" value="<?php echo esc_url( $social_tumblr_link ); ?>" />
 
 	</p>
-    
+
     <!-- dribbble -->
-    
+
     <p>
 
 	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_dribbble_link')); ?>"><?php esc_html_e('Dribbble URL:', 'hired'); ?></label>
@@ -176,9 +157,9 @@ class hired_social extends WP_Widget {
 	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('social_dribbble_link')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('social_dribbble_link')); ?>" type="text" value="<?php echo esc_url( $social_dribbble_link ); ?>" />
 
 	</p>
-    
+
     <!-- rss -->
-    
+
     <p>
 
 	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_rss_link')); ?>"><?php esc_html_e('RSS URL:', 'hired'); ?></label>
@@ -186,81 +167,75 @@ class hired_social extends WP_Widget {
 	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('social_rss_link')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('social_rss_link')); ?>" type="text" value="<?php echo esc_url( $social_rss_link ); ?>" /> 
 
 	</p>
-    
+
     <!-- checkbox -->
-    
+
     <p>
-    
+
     <input class="checkbox" type="checkbox" <?php checked( $social_url_path ); ?> id="<?php echo $this->get_field_id( 'social_url_path' ); ?>" name="<?php echo $this->get_field_name( 'social_url_path' ); ?>" />
 
 	<label for="<?php echo $this->get_field_id( 'social_url_path' ); ?>"><?php esc_html_e( 'Check this box to open links in a new window.', 'hired' ); ?></label>
-    
-    </p> 
-	
+
+    </p>
 
 	<?php
 
 	}
 
 
-
-	// update widget 
+	// update widget
 
 	function update($new_instance, $old_instance) {
 
 		$instance = $old_instance;
-		
+
 		$instance['social_fb_link'] 	= 	esc_url_raw($new_instance['social_fb_link']);
-		
+
+		$instance['social_github_link'] 	= 	esc_url_raw($new_instance['social_github_link']);
+
 		$instance['social_twitter_link'] 	= 	esc_url_raw($new_instance['social_twitter_link']);
-		
+
 		$instance['social_linked_link'] 	= 	esc_url_raw($new_instance['social_linked_link']);
-		
+
 		$instance['social_google_link'] 	= 	esc_url_raw($new_instance['social_google_link']);
-		
+
 		$instance['social_instagram_link'] 		= 	esc_url_raw($new_instance['social_instagram_link']);
-		
+
 		$instance['social_flickr_link'] 	= 	esc_url_raw($new_instance['social_flickr_link']);
-		
+
 		$instance['social_pinterest_link'] 		= 	esc_url_raw($new_instance['social_pinterest_link']);
-		
+
 		$instance['social_youtube_link'] 	= 	esc_url_raw($new_instance['social_youtube_link']);
-		
+
 		$instance['social_vimeo_link'] 		= 	esc_url_raw($new_instance['social_vimeo_link']);
-		
+
 		$instance['social_tumblr_link'] 	= 	esc_url_raw($new_instance['social_tumblr_link']);
-		
+
 		$instance['social_dribbble_link'] 	= 	esc_url_raw($new_instance['social_dribbble_link']);
-		
+
 		$instance['social_rss_link'] 	= 	esc_url_raw($new_instance['social_rss_link']);
-		
+
 		$instance['social_url_path'] 		= isset( $new_instance['social_url_path'] ) ? (bool) $new_instance['social_url_path'] : false;
 
 		$this->flush_widget_cache();
-
 
 
 		$alloptions = wp_cache_get( 'alloptions', 'options' );
 
 		if ( isset($alloptions['hired_social']) )
 
-			delete_option('hired_social');		  
-
-		  
+			delete_option('hired_social');
 
 		return $instance;
 
 	}
 
-	
 
 	function flush_widget_cache() {
 
 		wp_cache_delete('hired_social', 'widget');
 
 	}
-
-	
 
 	// display widget
 
@@ -306,40 +281,25 @@ class hired_social extends WP_Widget {
 
 		extract($args);
 
-		
-		
 		$social_fb_link 	= isset( $instance['social_fb_link'] ) ? esc_url( $instance['social_fb_link'] ) : '';
-		
+		$social_github_link 	= isset( $instance['social_github_link'] ) ? esc_url( $instance['social_github_link'] ) : '';
 		$social_twitter_link 	= isset( $instance['social_twitter_link'] ) ? esc_url( $instance['social_twitter_link'] ) : '';
-		
 		$social_linked_link 	= isset( $instance['social_linked_link'] ) ? esc_url( $instance['social_linked_link'] ) : '';
-		
 		$social_google_link 	= isset( $instance['social_google_link'] ) ? esc_url( $instance['social_google_link'] ) : '';
-		
 		$social_instagram_link 	= isset( $instance['social_instagram_link'] ) ? esc_url( $instance['social_instagram_link'] ) : '';
-		
 		$social_flickr_link 	= isset( $instance['social_flickr_link'] ) ? esc_url( $instance['social_flickr_link'] ) : '';
-		
 		$social_pinterest_link 	= isset( $instance['social_pinterest_link'] ) ? esc_url( $instance['social_pinterest_link'] ) : '';
-		
 		$social_youtube_link 	= isset( $instance['social_youtube_link'] ) ? esc_url( $instance['social_youtube_link'] ) : '';
-		
 		$social_vimeo_link 	= isset( $instance['social_vimeo_link'] ) ? esc_url( $instance['social_vimeo_link'] ) : '';
-		
 		$social_tumblr_link 	= isset( $instance['social_tumblr_link'] ) ? esc_url( $instance['social_tumblr_link'] ) : '';
-		
 		$social_dribbble_link 	= isset( $instance['social_dribbble_link'] ) ? esc_url( $instance['social_dribbble_link'] ) : '';
-		
 		$social_rss_link 	= isset( $instance['social_rss_link'] ) ? esc_url( $instance['social_rss_link'] ) : '';
-		
 		$social_url_path	= isset( $instance['social_url_path'] ) ? (bool) $instance['social_url_path'] : false;
-		
-		
 
 ?>
-			
+
     	<ul class='social-media-icons'>
-             
+
         	<?php if ($social_fb_link !='') : ?>
             	<li>
                 <a href="<?php echo esc_url( $social_fb_link ); ?>" <?php if( $social_url_path ) : ?>target="_blank"<?php endif; ?>>
@@ -347,6 +307,13 @@ class hired_social extends WP_Widget {
                 </a>
                 </li>
 			<?php endif; ?>
+                <?php if ($social_github_link !='') : ?>
+                <li>
+                <a href="<?php echo esc_url( $social_github_link ); ?>" <?php if( $social_url_path ) : ?>target="_blank$
+                <i class="fa fa-github"></i>
+                </a>
+                </li>
+                        <?php endif; ?>
             <?php if ($social_twitter_link !='') : ?>
             	<li>
                 <a href="<?php echo esc_url( $social_twitter_link ); ?>" <?php if( $social_url_path ) : ?>target="_blank"<?php endif; ?>>

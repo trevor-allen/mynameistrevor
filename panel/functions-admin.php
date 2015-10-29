@@ -1,12 +1,12 @@
 <?php
 /**
- * hired admin functions 
+ * admin functions
  *
- * @package hired 
+ * @package mynameistrevor
  */
 
 // admin area styling
-function hired_custom_colors() {
+function mynameistrevor_custom_colors() {
    echo '<style type="text/css">
    
           #setting-error-tgmpa {
@@ -32,15 +32,15 @@ function hired_custom_colors() {
          </style>';
 }
 
-add_action('admin_head', 'hired_custom_colors'); 
+add_action('admin_head', 'mynameistrevor_custom_colors'); 
 
 /**
  *TGM Plugin activation.
  */
 require_once get_template_directory() . '/panel/class-tgm-plugin-activation.php'; 
  
-add_action( 'tgmpa_register', 'hired_recommend_plugin' );
-function hired_recommend_plugin() {
+add_action( 'tgmpa_register', 'mynameistrevor_recommend_plugin' );
+function mynameistrevor_recommend_plugin() {
  
     $plugins = array(
         // Include plugin from the WordPress Plugin Repository

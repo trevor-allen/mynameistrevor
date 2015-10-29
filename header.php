@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package hired
+ * @package mynameistrevor
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -18,67 +18,66 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'hired' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'mynameistrevor' ); ?></a>
 
 	<header id="masthead" class="site-header animated slideInLeft delay" role="banner">
 		<nav id="site-navigation" class="main-navigation" role="navigation">
-        
+
 		<button class="menu-toggle toggle-menu menu-left push-body" aria-controls="primary-menu" aria-expanded="false">
-		
-		<?php 
-		
-			$menu_toggle_option = get_theme_mod( 'hired_menu_toggle', 'icon' );  
+
+		<?php
+
+			$menu_toggle_option = get_theme_mod( 'mynameistrevor_menu_toggle', 'icon' );
 
 			$menu_display = '';
 
 			if ( $menu_toggle_option == 'icon' ) {
-				
-				$menu_display = sprintf( '<i class="fa fa-bars"></i>' );
-			
-			} else if ( $menu_toggle_option == 'label' ) {
-				
-				$menu_display = esc_html_e( 'Menu', 'hired' );
-			
-			} 
 
-			echo $menu_display; 
-			
+				$menu_display = sprintf( '<i class="fa fa-bars"></i>' );
+
+			} else if ( $menu_toggle_option == 'label' ) {
+
+				$menu_display = esc_html_e( 'Menu', 'mynameistrevor' );
+
+			}
+
+			echo $menu_display;
+
 		?>
-            
+
         </button>
-        
+
 		</nav><!-- #site-navigation -->
-        
+
         <div class="social-icons">
         	<?php if ( is_active_sidebar('social-widget-area') ) : ?>
-            
+
             	<?php dynamic_sidebar('social-widget-area'); ?>
-                
-            <?php endif; ?> 
+
+            <?php endif; ?>
         </div>
-        
+
 	</header><!-- #masthead -->
-    
-    <div class="site-branding animated fadeIn delay-3"> 
-		
-        <?php if ( get_theme_mod( 'hired_logo' ) ) : ?>
-              
-    			<div class="site-logo site-title"> 
-       				<a 
-                    	href='<?php echo esc_url( home_url( '/' ) ); ?>' 
-                        title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>' 
+
+    <div class="site-branding animated fadeIn delay-3">
+
+        <?php if ( get_theme_mod( 'mynameistrevor_logo' ) ) : ?>
+
+    			<div class="site-logo site-title">
+       				<a
+                    	href='<?php echo esc_url( home_url( '/' ) ); ?>'
+                        title='<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>'
                         rel='home'
                     >
-                        
-                    	<img 
-                        	src='<?php echo esc_url( get_theme_mod( 'hired_logo' ) ); ?>' 
-							
+
+                    	<img
+                        	src='<?php echo esc_url( get_theme_mod( 'mynameistrevor_logo' ) ); ?>'
 							<?php if ( get_theme_mod( 'logo_size' ) ) : ?>
-                            
+
                             	width="<?php echo esc_attr( get_theme_mod( 'logo_size', '165' )); ?>"
-                                
-							<?php endif; ?> 
-                            
+
+							<?php endif; ?>
+
                             alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"
                         >
                         

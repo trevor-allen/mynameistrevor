@@ -4,11 +4,11 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php //post_class(); ?> class="masonry-post">
 	<header class="entry-header">
     	<?php the_post_thumbnail('large'); ?>
 	</header><!-- .entry-header -->
-aaaaaaaaaaaaaaaa
+
 	<div class="entry-content">
     	<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
 

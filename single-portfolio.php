@@ -9,15 +9,15 @@ get_header(); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
 
-	<?php if (has_post_thumbnail( $post->ID ) ): ?>
-
-		<header class="single-entry-header animated fadeIn delay" style="background-image: url('<?php echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID) , 'full' ); ?>');">
+	<?php //if (has_post_thumbnail( $post->ID ) ): ?>
+		<header class="single-entry-header animated fadeIn delay" style="background-image: url('<?php bloginfo('template_directory'); ?>/img/trianglify-background.svg');">
+	<!--	<header class="single-entry-header animated fadeIn delay" style="background-image: url('<?php //echo wp_get_attachment_url( get_post_thumbnail_id( $post->ID) , 'full' ); ?>');"> -->
     
-    <?php else: ?>    
+    <?php //else: ?>    
     
-    	<header class="single-entry-header animated fadeIn delay">  
+    	<!-- <header class="single-entry-header animated fadeIn delay">   -->
     
-    <?php endif; ?>
+    <?php //endif; ?>
     
     
     	<div class="single-entry-content animated fadeInLeft delay">

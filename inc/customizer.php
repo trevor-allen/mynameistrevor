@@ -405,6 +405,12 @@ function mynameistrevor_customize_register( $wp_customize ) {
 		'priority'   => 20
 	)));
 
+	//Sub Title
+	$wp_customize->add_setting( 'mynameistrevor_home_subtitle',
+		array(
+			'sanitize_callback' => 'mynameistrevor_sanitize_text',
+	));
+
 	$wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'mynameistrevor_home_subtitle', array(
 		'label'    => esc_html__( 'Sub Title Text', 'mynameistrevor' ),
 		'section'  => 'mynameistrevor_home_info_options',

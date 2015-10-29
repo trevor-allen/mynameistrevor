@@ -3,39 +3,70 @@
 
 
 class mynameistrevor_social extends WP_Widget {
+
 // constructor
 
     function mynameistrevor_social() {
 
 		$widget_ops = array('classname' => 'mynameistrevor_social_widget', 'description' => esc_html__( 'Drag this widget to the Social Widget Area.', 'mynameistrevor') );
-	        parent::__construct(false, $name = esc_html__('MT - Social Icons', 'mynameistrevor'), $widget_ops);
+
+        parent::__construct(false, $name = esc_html__('MT - Social Icons', 'mynameistrevor'), $widget_ops);
+
 		$this->alt_option_name = 'mynameistrevor_social_widget';
 
+
+
 		add_action( 'save_post', array($this, 'flush_widget_cache') );
+
 		add_action( 'deleted_post', array($this, 'flush_widget_cache') );
+
 		add_action( 'switch_theme', array($this, 'flush_widget_cache') );
+
     }
+
+
 
 	// widget form creation
 
 	function form($instance) {
+
+
+
 	// Check values
 
+
+
 		$social_fb_link 	= isset( $instance['social_fb_link'] ) ? esc_url( $instance['social_fb_link'] ) : '';
-		$social_github_link 	= isset( $instance['social_github_link'] ) ? esc_url( $instance['social_github_link'] ) : '';
+
+        $social_github_link 	= isset( $instance['social_github_link'] ) ? esc_url( $instance['social_github_link'] ) : '';
+
 		$social_twitter_link 	= isset( $instance['social_twitter_link'] ) ? esc_url( $instance['social_twitter_link'] ) : '';
+
 		$social_linked_link 	= isset( $instance['social_linked_link'] ) ? esc_url( $instance['social_linked_link'] ) : '';
+
 		$social_google_link 	= isset( $instance['social_google_link'] ) ? esc_url( $instance['social_google_link'] ) : '';
+
 		$social_instagram_link 	= isset( $instance['social_instagram_link'] ) ? esc_url( $instance['social_instagram_link'] ) : '';
+
 		$social_flickr_link 	= isset( $instance['social_flickr_link'] ) ? esc_url( $instance['social_flickr_link'] ) : '';
+
 		$social_pinterest_link 	= isset( $instance['social_pinterest_link'] ) ? esc_url( $instance['social_pinterest_link'] ) : '';
+
 		$social_youtube_link 	= isset( $instance['social_youtube_link'] ) ? esc_url( $instance['social_youtube_link'] ) : '';
+
 		$social_vimeo_link 	= isset( $instance['social_vimeo_link'] ) ? esc_url( $instance['social_vimeo_link'] ) : '';
+
 		$social_tumblr_link 	= isset( $instance['social_tumblr_link'] ) ? esc_url( $instance['social_tumblr_link'] ) : '';
+
 		$social_dribbble_link 	= isset( $instance['social_dribbble_link'] ) ? esc_url( $instance['social_dribbble_link'] ) : '';
+
 		$social_rss_link 	= isset( $instance['social_rss_link'] ) ? esc_url( $instance['social_rss_link'] ) : '';
+
 		$social_url_path	= isset( $instance['social_url_path'] ) ? (bool) $instance['social_url_path'] : false;
+
+
 	?>
+
 
 
 	<!-- facebook -->
@@ -48,13 +79,13 @@ class mynameistrevor_social extends WP_Widget {
 
 	</p>
 
-        <!-- github -->
+    <!-- github -->
 
     <p>
 
-        <label for="<?php echo sanitize_text_field( $this->get_field_id('social_github_link')); ?>"><?php esc_html_e('Github URL:', 'mynameistrevor'); ?></label>
+    <label for="<?php echo sanitize_text_field( $this->get_field_id('social_github_link')); ?>"><?php esc_html_e('Facebook URL:', 'mynameistrevor'); ?></label>
 
-	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('social_github_link')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('social_github_link')); ?>" type="text" value="<?php echo esc_url( $social_github_link ); ?>" />
+    <input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('social_github_link')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('social_github_link')); ?>" type="text" value="<?php echo esc_url( $social_github_link ); ?>" />
 
     </p>
 
@@ -74,7 +105,7 @@ class mynameistrevor_social extends WP_Widget {
 
 	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_linked_link')); ?>"><?php esc_html_e('LinkedIn URL:', 'mynameistrevor'); ?></label>
 
-	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('social_linked_link')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('social_linked_link')); ?>" type="text" value="<?php echo esc_url( $social_linked_link ); ?>" /> 
+	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('social_linked_link')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('social_linked_link')); ?>" type="text" value="<?php echo esc_url( $social_linked_link ); ?>" />
 
 	</p>
 
@@ -164,7 +195,7 @@ class mynameistrevor_social extends WP_Widget {
 
 	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_rss_link')); ?>"><?php esc_html_e('RSS URL:', 'mynameistrevor'); ?></label>
 
-	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('social_rss_link')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('social_rss_link')); ?>" type="text" value="<?php echo esc_url( $social_rss_link ); ?>" /> 
+	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('social_rss_link')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('social_rss_link')); ?>" type="text" value="<?php echo esc_url( $social_rss_link ); ?>" />
 
 	</p>
 
@@ -178,9 +209,11 @@ class mynameistrevor_social extends WP_Widget {
 
     </p>
 
+
 	<?php
 
 	}
+
 
 
 	// update widget
@@ -191,7 +224,7 @@ class mynameistrevor_social extends WP_Widget {
 
 		$instance['social_fb_link'] 	= 	esc_url_raw($new_instance['social_fb_link']);
 
-		$instance['social_github_link'] 	= 	esc_url_raw($new_instance['social_github_link']);
+        $instance['social_github_link'] 	= 	esc_url_raw($new_instance['social_github_link']);
 
 		$instance['social_twitter_link'] 	= 	esc_url_raw($new_instance['social_twitter_link']);
 
@@ -220,15 +253,19 @@ class mynameistrevor_social extends WP_Widget {
 		$this->flush_widget_cache();
 
 
+
 		$alloptions = wp_cache_get( 'alloptions', 'options' );
 
 		if ( isset($alloptions['mynameistrevor_social']) )
 
 			delete_option('mynameistrevor_social');
 
+
+
 		return $instance;
 
 	}
+
 
 
 	function flush_widget_cache() {
@@ -236,6 +273,8 @@ class mynameistrevor_social extends WP_Widget {
 		wp_cache_delete('mynameistrevor_social', 'widget');
 
 	}
+
+
 
 	// display widget
 
@@ -281,20 +320,37 @@ class mynameistrevor_social extends WP_Widget {
 
 		extract($args);
 
+
+
 		$social_fb_link 	= isset( $instance['social_fb_link'] ) ? esc_url( $instance['social_fb_link'] ) : '';
-		$social_github_link 	= isset( $instance['social_github_link'] ) ? esc_url( $instance['social_github_link'] ) : '';
+
+        $social_github_link 	= isset( $instance['social_github_link'] ) ? esc_url( $instance['social_github_link'] ) : '';
+
 		$social_twitter_link 	= isset( $instance['social_twitter_link'] ) ? esc_url( $instance['social_twitter_link'] ) : '';
+
 		$social_linked_link 	= isset( $instance['social_linked_link'] ) ? esc_url( $instance['social_linked_link'] ) : '';
+
 		$social_google_link 	= isset( $instance['social_google_link'] ) ? esc_url( $instance['social_google_link'] ) : '';
+
 		$social_instagram_link 	= isset( $instance['social_instagram_link'] ) ? esc_url( $instance['social_instagram_link'] ) : '';
+
 		$social_flickr_link 	= isset( $instance['social_flickr_link'] ) ? esc_url( $instance['social_flickr_link'] ) : '';
+
 		$social_pinterest_link 	= isset( $instance['social_pinterest_link'] ) ? esc_url( $instance['social_pinterest_link'] ) : '';
+
 		$social_youtube_link 	= isset( $instance['social_youtube_link'] ) ? esc_url( $instance['social_youtube_link'] ) : '';
+
 		$social_vimeo_link 	= isset( $instance['social_vimeo_link'] ) ? esc_url( $instance['social_vimeo_link'] ) : '';
+
 		$social_tumblr_link 	= isset( $instance['social_tumblr_link'] ) ? esc_url( $instance['social_tumblr_link'] ) : '';
+
 		$social_dribbble_link 	= isset( $instance['social_dribbble_link'] ) ? esc_url( $instance['social_dribbble_link'] ) : '';
+
 		$social_rss_link 	= isset( $instance['social_rss_link'] ) ? esc_url( $instance['social_rss_link'] ) : '';
+
 		$social_url_path	= isset( $instance['social_url_path'] ) ? (bool) $instance['social_url_path'] : false;
+
+
 
 ?>
 
@@ -307,13 +363,13 @@ class mynameistrevor_social extends WP_Widget {
                 </a>
                 </li>
 			<?php endif; ?>
-                <?php if ($social_github_link !='') : ?>
+            <?php if ($social_github_link !='') : ?>
                 <li>
-                <a href="<?php echo esc_url( $social_github_link ); ?>" <?php if( $social_url_path ) : ?>target="_blank$
+                <a href="<?php echo esc_url( $social_github_link ); ?>" <?php if( $social_url_path ) : ?>target="_blank"<?php endif; ?>>
                 <i class="fa fa-github"></i>
                 </a>
                 </li>
-                        <?php endif; ?>
+            <?php endif; ?>
             <?php if ($social_twitter_link !='') : ?>
             	<li>
                 <a href="<?php echo esc_url( $social_twitter_link ); ?>" <?php if( $social_url_path ) : ?>target="_blank"<?php endif; ?>>
@@ -387,13 +443,13 @@ class mynameistrevor_social extends WP_Widget {
             <?php if ($social_rss_link !='') : ?>
             	<li>
                 <a href="<?php echo esc_url( $social_rss_link ); ?>" <?php if( $social_url_path ) : ?>target="_blank"<?php endif; ?>>
-               <i class="fa fa-rss"></i> 
+               <i class="fa fa-rss"></i>
                 </a>
                 </li>
 			<?php endif; ?>
-            
-    	</ul> 
-              
+
+    	</ul>
+
 
 	<?php
 
@@ -410,9 +466,6 @@ class mynameistrevor_social extends WP_Widget {
 			ob_end_flush();
 
 		}
-
 	}
-
-	
-
 }
+

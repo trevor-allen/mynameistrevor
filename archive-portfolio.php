@@ -14,10 +14,6 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<header class="page-header">
-				<h1>Portfolio:</h1>
-			</header><!-- .page-header -->
-
 		<div class="tabs">
 
 			<input type="radio" name="tabs" id="tab1" checked >

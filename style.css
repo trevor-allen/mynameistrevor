@@ -981,13 +981,13 @@ button.resume:hover {
     width: 100%;
 }
 
-button.hired-about-button {
+button.mynameistrevor-about-button {
 	background-color:#ffffff;
 	color:#25b5f1;	
 	border-color:#ffffff; 
 } 
 
-button.hired-about-button:hover {
+button.mynameistrevor-about-button:hover {
 	background-color:#ffffff;
 	color:#25b5f1;	
 	border-color:#ffffff; 
@@ -1178,17 +1178,17 @@ button.hired-about-button:hover {
 	margin-top: 0 !important;
 }
 
-.hired-aboutme-page {
+.mynameistrevor-aboutme-page {
 	background-color:#f1f1f1;
 }
 
 
-.hired-aboutme-header {
+.mynameistrevor-aboutme-header {
 	background-color:#333333 !important;
 }
 
 
-.hired-aboutme-header .entry-title { 
+.mynameistrevor-aboutme-header .entry-title { 
 	color:#ffffff;
 }
 

@@ -4,7 +4,7 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package hired
+ * @package mynameistrevor
  */
 
 get_header(); ?>
@@ -24,7 +24,7 @@ get_header(); ?>
 			</header><!-- .page-header -->
 
 			<div id="masonry-container">
-            
+
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -37,7 +37,7 @@ get_header(); ?>
 				?>
 
 			<?php endwhile; ?>
-            
+
             </div>
 
 			<?php the_posts_navigation(); ?>

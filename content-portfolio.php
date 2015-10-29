@@ -1,6 +1,6 @@
 <?php
 /**
- * @package hired
+ * @package mynameistrevor
  */
 ?>
 
@@ -14,17 +14,17 @@
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">
-			<p><?php esc_html_e( 'Posted on', 'hired' ); ?>&nbsp;<?php the_time('F j, Y'); ?>&nbsp;<?php esc_html_e( 'in', 'hired' ); ?>&nbsp;<?php the_category(', ') ?></p>
+			<p><?php esc_html_e( 'Posted on', 'mynameistrevor' ); ?>&nbsp;<?php the_time('F j, Y'); ?>&nbsp;<?php esc_html_e( 'in', 'mynameistrevor' ); ?>&nbsp;<?php the_category(', ') ?></p>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
-		
+
 		<a href="<?php the_permalink(); ?>">
-        	
+
         		<button>
-        			<?php echo wp_kses_post( get_theme_mod( 'hired_blog_read_more', esc_html__( 'Read More', 'hired' ) ));  ?> 
+        			<?php echo wp_kses_post( get_theme_mod( 'mynameistrevor_blog_read_more', esc_html__( 'Read More', 'mynameistrevor' ) ));  ?> 
 				</button>
-			
-        </a> 
-        
-	</div><!-- .entry-content -->  
+
+        </a>
+
+	</div><!-- .entry-content -->
 </article><!-- #post-## -->

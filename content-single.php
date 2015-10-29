@@ -1,6 +1,6 @@
 <?php
 /**
- * @package hired
+ * @package mynameistrevor
  */
 ?>
 
@@ -9,13 +9,13 @@
 		<?php the_content(); ?>
 		<?php
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'hired' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'mynameistrevor' ),
 				'after'  => '</div>',
 			) );
 		?>
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php hired_entry_footer(); ?>
+		<?php mynameistrevor_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->

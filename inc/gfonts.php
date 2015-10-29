@@ -3,7 +3,7 @@
 
 //Google Fonts
 
-function hired_custom_styles($custom) {  
+function mynameistrevor_custom_styles($custom) {  
 
 
 	//Fonts 
@@ -32,8 +32,8 @@ function hired_custom_styles($custom) {
 
 	//Output all the styles
 
-	wp_add_inline_style( 'hired-style', $custom );	
+	wp_add_inline_style( 'mynameistrevor-style', $custom );	
 
 }
 
-add_action( 'wp_enqueue_scripts', 'hired_custom_styles' );
+add_action( 'wp_enqueue_scripts', 'mynameistrevor_custom_styles' );

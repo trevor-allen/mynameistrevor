@@ -2,19 +2,19 @@
 
 
 
-class hired_Video_Widget extends WP_Widget {  
+class mynameistrevor_Video_Widget extends WP_Widget {  
 
 
 
 // constructor
 
-    function hired_video_widget() {
+    function mynameistrevor_video_widget() {
 
-		$widget_ops = array('classname' => 'hired_video_widget_widget', 'description' => esc_html__( 'Video for your sidebar.', 'hired') ); 
+		$widget_ops = array('classname' => 'mynameistrevor_video_widget_widget', 'description' => esc_html__( 'Video for your sidebar.', 'mynameistrevor') ); 
 
-        parent::__construct(false, $name = esc_html__('MT - Video Widget', 'hired'), $widget_ops); 
+        parent::__construct(false, $name = esc_html__('MT - Video Widget', 'mynameistrevor'), $widget_ops); 
 
-		$this->alt_option_name = 'hired_video_widget';
+		$this->alt_option_name = 'mynameistrevor_video_widget';
 
 		
 
@@ -46,7 +46,7 @@ class hired_Video_Widget extends WP_Widget {
 
 	<p>
 
-	<label for="<?php echo sanitize_text_field( $this->get_field_id('title')); ?>"><?php esc_html_e('Title', 'hired'); ?></label>
+	<label for="<?php echo sanitize_text_field( $this->get_field_id('title')); ?>"><?php esc_html_e('Title', 'mynameistrevor'); ?></label>
 
 	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('title')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('title')); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
 
@@ -54,7 +54,7 @@ class hired_Video_Widget extends WP_Widget {
 
 
 
-	<p><label for="<?php echo sanitize_text_field( $this->get_field_id( 'url' )); ?>"><?php esc_html_e( 'Paste the URL of the video (only from a network that supports oEmbed, like Youtube, Vimeo etc.):', 'hired' ); ?></label>
+	<p><label for="<?php echo sanitize_text_field( $this->get_field_id( 'url' )); ?>"><?php esc_html_e( 'Paste the URL of the video (only from a network that supports oEmbed, like Youtube, Vimeo etc.):', 'mynameistrevor' ); ?></label>
 
 	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id( 'url' )); ?>" name="<?php echo sanitize_text_field( $this->get_field_name( 'url' )); ?>" type="text" value="<?php echo esc_url( $url ); ?>" size="3" /></p>
 
@@ -82,9 +82,9 @@ class hired_Video_Widget extends WP_Widget {
 
 		$alloptions = wp_cache_get( 'alloptions', 'options' );
 
-		if ( isset($alloptions['hired_video_widget']) )
+		if ( isset($alloptions['mynameistrevor_video_widget']) )
 
-			delete_option('hired_video_widget');		  
+			delete_option('mynameistrevor_video_widget');		  
 
 		  
 
@@ -96,7 +96,7 @@ class hired_Video_Widget extends WP_Widget {
 
 	function flush_widget_cache() {
 
-		wp_cache_delete('hired_video_widget', 'widget');
+		wp_cache_delete('mynameistrevor_video_widget', 'widget');
 
 	}
 
@@ -110,7 +110,7 @@ class hired_Video_Widget extends WP_Widget {
 
 		if ( ! $this->is_preview() ) {
 
-			$cache = wp_cache_get( 'hired_video_widget', 'widget' );
+			$cache = wp_cache_get( 'mynameistrevor_video_widget', 'widget' );
 
 		}
 
@@ -148,7 +148,7 @@ class hired_Video_Widget extends WP_Widget {
 
 
 
-		$title = ( ! empty( $instance['title'] ) ) ? esc_attr( $instance['title'] ) : esc_html__( 'Video', 'hired' );
+		$title = ( ! empty( $instance['title'] ) ) ? esc_attr( $instance['title'] ) : esc_html__( 'Video', 'mynameistrevor' );
 
 
 
@@ -184,7 +184,7 @@ class hired_Video_Widget extends WP_Widget {
 
 			$cache[ $args['widget_id'] ] = ob_get_flush();
 
-			wp_cache_set( 'hired_video_widget', $cache, 'widget' );
+			wp_cache_set( 'mynameistrevor_video_widget', $cache, 'widget' );
 
 		} else {
 

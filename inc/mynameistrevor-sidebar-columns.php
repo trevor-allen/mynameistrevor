@@ -5,9 +5,9 @@
 	Home Widget One
 -------------------------------------------------------------------------------------------------------*/
 	
-function hired_home_widget_one_style() {
+function mynameistrevor_home_widget_one_style() {
 
-	$widget_column_one = esc_html( get_theme_mod( 'hired_widget_column_one' ));
+	$widget_column_one = esc_html( get_theme_mod( 'mynameistrevor_widget_column_one' ));
     			
 	if( $widget_column_one != '' ) { 
     
@@ -52,7 +52,7 @@ function hired_home_widget_one_style() {
 	
 }
 	
-add_action( 'wp_enqueue_scripts', 'hired_home_widget_one_style' );
+add_action( 'wp_enqueue_scripts', 'mynameistrevor_home_widget_one_style' );
 	
 	
 	
@@ -60,9 +60,9 @@ add_action( 'wp_enqueue_scripts', 'hired_home_widget_one_style' );
 	Home Widget Two
 -------------------------------------------------------------------------------------------------------*/
 
-function hired_home_widget_two_style() {
+function mynameistrevor_home_widget_two_style() {
 	
-	$widget_column_two = esc_html( get_theme_mod( 'hired_widget_column_two' ));
+	$widget_column_two = esc_html( get_theme_mod( 'mynameistrevor_widget_column_two' ));
     			
 	if( $widget_column_two != '' ) {
     
@@ -107,16 +107,16 @@ function hired_home_widget_two_style() {
 	
 }
 
-add_action( 'wp_enqueue_scripts', 'hired_home_widget_two_style' );
+add_action( 'wp_enqueue_scripts', 'mynameistrevor_home_widget_two_style' );
 	
 	
 /*-----------------------------------------------------------------------------------------------------//
 	Home Widget Three
 -------------------------------------------------------------------------------------------------------*/
 
-function hired_home_widget_three_style() {
+function mynameistrevor_home_widget_three_style() {
 	
-	$widget_column_three = esc_html( get_theme_mod( 'hired_widget_column_three' )); 
+	$widget_column_three = esc_html( get_theme_mod( 'mynameistrevor_widget_column_three' )); 
     			
 	if( $widget_column_three != '' ) {
     
@@ -161,16 +161,16 @@ function hired_home_widget_three_style() {
 	
 }
 
-add_action( 'wp_enqueue_scripts', 'hired_home_widget_three_style' );
+add_action( 'wp_enqueue_scripts', 'mynameistrevor_home_widget_three_style' );
 	
 	
 /*-----------------------------------------------------------------------------------------------------//
 	Home Widget Four
 -------------------------------------------------------------------------------------------------------*/
 
-function hired_home_widget_four_style() {
+function mynameistrevor_home_widget_four_style() {
 	
-	$widget_column_four = esc_html( get_theme_mod( 'hired_widget_column_four' ));
+	$widget_column_four = esc_html( get_theme_mod( 'mynameistrevor_widget_column_four' ));
     			
 	if( $widget_column_four != '' ) {
     
@@ -215,15 +215,15 @@ function hired_home_widget_four_style() {
 	
 }
 
-add_action( 'wp_enqueue_scripts', 'hired_home_widget_four_style' );
+add_action( 'wp_enqueue_scripts', 'mynameistrevor_home_widget_four_style' );
 	
 /*-----------------------------------------------------------------------------------------------------//
 	Home Widget Five
 -------------------------------------------------------------------------------------------------------*/
 
-function hired_home_widget_five_style() {
+function mynameistrevor_home_widget_five_style() {
 	
-	$widget_column_five = esc_html( get_theme_mod( 'hired_widget_column_five', '1' ));
+	$widget_column_five = esc_html( get_theme_mod( 'mynameistrevor_widget_column_five', '1' ));
     			
 	if( $widget_column_five != '' ) {
     
@@ -268,4 +268,4 @@ function hired_home_widget_five_style() {
 	
 }
 
-add_action( 'wp_enqueue_scripts', 'hired_home_widget_five_style' );
+add_action( 'wp_enqueue_scripts', 'mynameistrevor_home_widget_five_style' );

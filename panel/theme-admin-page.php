@@ -27,7 +27,7 @@ add_action( 'admin_enqueue_scripts', 'mynameistrevor_admin_page_styles' );
 		printf(esc_html__('Check out our mynameistrevor Documentation to learn how to use mynameistrevor and for tutorials on theme functions. ', 'mynameistrevor' ));  
 		echo '</p>'; 
 		
-		echo '<a href="https://modernthemes.net/documentation/hired-theme-documentation/" target="_blank"><button>';
+		echo '<a href="https://modernthemes.net/documentation/mynameistrevor-theme-documentation/" target="_blank"><button>';
 		printf(esc_html__('Documentation', 'mynameistrevor' ));
 		echo '</button></a></div></div>'; 
 		
@@ -101,7 +101,7 @@ add_action( 'admin_enqueue_scripts', 'mynameistrevor_admin_page_styles' );
 		printf( esc_html__( 'Call on us to help you out. Premium themes come with free support that goes directly to our support staff.', 'mynameistrevor' ));
 		echo '</p></div></div>';
 		
-		echo '<div class="grid grid-pad" style="border-bottom: 1px solid #ccc; padding-bottom: 50px; margin-bottom: 30px;"><div class="col-1-1"><a href="https://modernthemes.net/wordpress-themes/hired/hired-premium/" target="_blank"><button class="pro">'; 
+		echo '<div class="grid grid-pad" style="border-bottom: 1px solid #ccc; padding-bottom: 50px; margin-bottom: 30px;"><div class="col-1-1"><a href="https://modernthemes.net/wordpress-themes/mynameistrevor/mynameistrevor-premium/" target="_blank"><button class="pro">'; 
 		printf( esc_html__( 'View Premium Version', 'mynameistrevor' )); 
 		echo '</button></a></div></div>'; 
 		 

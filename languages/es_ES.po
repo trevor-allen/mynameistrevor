@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: hired v1.0.0\n"
+"Project-Id-Version: mynameistrevor v1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: 2015-07-31 04:34:35+0000\n"
@@ -22,48 +22,48 @@ msgstr ""
 
 #: inc/template-tags.php:147
 #, php-format
-#@ hired
+#@ mynameistrevor
 msgid "Author: %s"
 msgstr "Autor: %s"
 
 #: inc/template-tags.php:153
 #, php-format
-#@ hired
+#@ mynameistrevor
 msgid "Day: %s"
 msgstr "Día: %s"
 
 #: inc/template-tags.php:151
 #, php-format
-#@ hired
+#@ mynameistrevor
 msgid "Month: %s"
 msgstr "Mes: %s"
 
 #: inc/template-tags.php:151
-#@ hired
+#@ mynameistrevor
 msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr ""
 
 #: inc/template-tags.php:149
 #, php-format
-#@ hired
+#@ mynameistrevor
 msgid "Year: %s"
 msgstr "Año: %s"
 
 #: inc/template-tags.php:149
-#@ hired
+#@ mynameistrevor
 msgctxt "yearly archives date format"
 msgid "Y"
 msgstr ""
 
 #: inc/template-tags.php:181
-#@ hired
+#@ mynameistrevor
 msgid "Archives"
 msgstr "Archivos"
 
 #: comments.php:28
 #, php-format
-#@ hired
+#@ mynameistrevor
 msgctxt "comments title"
 msgid "One thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
@@ -72,257 +72,257 @@ msgstr[1] "pensamientos de %1$ s \\\"%2$s\\\""
 
 #: comments.php:35
 #: comments.php:56
-#@ hired
+#@ mynameistrevor
 msgid "Comment navigation"
 msgstr "Navegación comentario"
 
 #: comments.php:72
-#@ hired
+#@ mynameistrevor
 msgid "Comments are closed."
 msgstr "Los comentarios están cerrados."
 
 #: content-none.php:13
-#@ hired
+#@ mynameistrevor
 msgid "Nothing Found"
 msgstr "Nada encontrado"
 
 #: content-none.php:19
 #, php-format
-#@ hired
+#@ mynameistrevor
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
 #: content-none.php:23
-#@ hired
+#@ mynameistrevor
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr "Lo sentimos, pero nada emparejó los términos de búsqueda. Por favor, pruebe con algunas palabras clave diferente."
 
 #: content-none.php:28
-#@ hired
+#@ mynameistrevor
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr "Parece que no podemos encontrar lo que estás buscando. Tal vez buscando puede ayudar."
 
 #: content-page.php:14
 #: content-single.php:12
-#@ hired
+#@ mynameistrevor
 msgid "Pages:"
 msgstr "Páginas:"
 
 #: content-page.php:21
 #: inc/template-tags.php:126
-#@ hired
+#@ mynameistrevor
 msgid "Edit"
 msgstr "Editar"
 
 #: footer-home.php:21
 #: footer.php:21
 #, php-format
-#@ hired
+#@ mynameistrevor
 msgid "Theme: %1$s by %2$s"
 msgstr ""
 
 #: functions.php:58
-#@ hired
+#@ mynameistrevor
 msgid "Primary Menu"
 msgstr "Menú principal"
 
 #: functions.php:89
-#@ hired
+#@ mynameistrevor
 msgid "Sidebar"
 msgstr "Sidebar"
 
 #: header-home.php:37
 #: header.php:37
-#@ hired
+#@ mynameistrevor
 msgid "Skip to content"
 msgstr "Saltar al contenido"
 
 #: header-home.php:53
 #: header.php:53
 #: inc/customizer.php:78
-#@ hired
+#@ mynameistrevor
 msgid "Menu"
 msgstr "Menú"
 
 #: inc/customizer.php:648
 #: inc/customizer.php:884
 #: inc/customizer.php:916
-#@ hired
+#@ mynameistrevor
 msgid "Text Color"
 msgstr "Color del texto"
 
 #: inc/customizer.php:672
 #: inc/customizer.php:928
-#@ hired
+#@ mynameistrevor
 msgid "Link Color"
 msgstr "Color del vínculo"
 
 #: inc/customizer.php:940
-#@ hired
+#@ mynameistrevor
 msgid "Hover Color"
 msgstr "Hover Color"
 
 #: inc/customizer.php:952
-#@ hired
+#@ mynameistrevor
 msgid "Site Title Color"
 msgstr "Sitio título Color"
 
 #: inc/customizer.php:172
-#@ hired
+#@ mynameistrevor
 msgid "Logo and Icons"
 msgstr "Logotipo e iconos"
 
 #: inc/customizer.php:174
-#@ hired
+#@ mynameistrevor
 msgid "Upload a logo to replace the default site name and description in the header. Also, upload your site favicon and Apple Icons."
 msgstr "Subir un logo para reemplazar el nombre por defecto del sitio y la descripción en el encabezado. Además, subir tu sitio favicon e iconos de Apple."
 
 #: inc/customizer.php:182
-#@ hired
+#@ mynameistrevor
 msgid "Logo"
 msgstr "Logotipo"
 
 #: inc/customizer.php:219
-#@ hired
+#@ mynameistrevor
 msgid "Upload your favicon (16x16 pixels)"
 msgstr "Sube tu favicon (16 x 16 píxeles)"
 
 #: inc/customizer.php:239
-#@ hired
+#@ mynameistrevor
 msgid "Upload your Apple Touch Icon (144x144 pixels)"
 msgstr "Subir tu icono de Touch de Apple (144 x 144 píxeles)"
 
 #: inc/customizer.php:259
-#@ hired
+#@ mynameistrevor
 msgid "Upload your Apple Touch Icon (114x114 pixels)"
 msgstr "Subir tu icono de toque Apple (114 x 114 pixeles)"
 
 #: inc/customizer.php:279
-#@ hired
+#@ mynameistrevor
 msgid "Upload your Apple Touch Icon (72x72 pixels)"
 msgstr "Subir tu icono de Touch de Apple (72 x 72 píxeles)"
 
 #: inc/customizer.php:299
-#@ hired
+#@ mynameistrevor
 msgid "Upload your Apple Touch Icon (57x57 pixels)"
 msgstr "Subir tu icono de Touch de Apple (57 x 57 píxeles)"
 
 #: inc/customizer.php:317
-#@ hired
+#@ mynameistrevor
 msgid "Social Media Icons"
 msgstr "Iconos de redes sociales"
 
 #: inc/customizer.php:370
-#@ hired
+#@ mynameistrevor
 msgid "Social Icon Color"
 msgstr "Icono social Color"
 
 #: inc/customizer.php:382
-#@ hired
+#@ mynameistrevor
 msgid "Social Icon Hover Color"
 msgstr "Icono social Hover Color"
 
 #: widgets/widget-mt-social.php:74
-#@ hired
+#@ mynameistrevor
 msgid "Facebook URL:"
 msgstr "URL de Facebook:"
 
 #: widgets/widget-mt-social.php:84
-#@ hired
+#@ mynameistrevor
 msgid "Twitter URL:"
 msgstr "Twitter URL:"
 
 #: widgets/widget-mt-social.php:94
-#@ hired
+#@ mynameistrevor
 msgid "LinkedIn URL:"
 msgstr "URL de LinkedIn:"
 
 #: widgets/widget-mt-social.php:114
-#@ hired
+#@ mynameistrevor
 msgid "Instagram URL:"
 msgstr "Instagram URL:"
 
 #: widgets/widget-mt-social.php:124
-#@ hired
+#@ mynameistrevor
 msgid "Flickr URL:"
 msgstr "Flickr: URL:"
 
 #: widgets/widget-mt-social.php:134
-#@ hired
+#@ mynameistrevor
 msgid "Pinterest URL:"
 msgstr "Pinterest URL:"
 
 #: widgets/widget-mt-social.php:154
-#@ hired
+#@ mynameistrevor
 msgid "Vimeo URL:"
 msgstr "URL de Vimeo:"
 
 #: widgets/widget-mt-social.php:164
-#@ hired
+#@ mynameistrevor
 msgid "Tumblr URL:"
 msgstr "URL de Tumblr:"
 
 #: widgets/widget-mt-social.php:174
-#@ hired
+#@ mynameistrevor
 msgid "Dribbble URL:"
 msgstr "Dribbble URL:"
 
 #: widgets/widget-mt-social.php:184
-#@ hired
+#@ mynameistrevor
 msgid "RSS URL:"
 msgstr "URL RSS:"
 
 #: inc/customizer.php:1169
-#@ hired
+#@ mynameistrevor
 msgid "Footer"
 msgstr "Pie de página"
 
 #: inc/customizer.php:1171
-#@ hired
+#@ mynameistrevor
 msgid "Customize your footer area"
 msgstr "Personalice su área de pie de página"
 
 #: inc/customizer.php:1182
-#@ hired
+#@ mynameistrevor
 msgid "Footer Byline Text"
 msgstr "Texto de autor de pie de página"
 
 #: inc/extras.php:52
 #, php-format
-#@ hired
+#@ mynameistrevor
 msgid "Page %s"
 msgstr "Página de %s"
 
 #: inc/template-tags.php:23
-#@ hired
+#@ mynameistrevor
 msgid "Posts navigation"
 msgstr "Puestos de navegación"
 
 #: inc/template-tags.php:27
-#@ hired
+#@ mynameistrevor
 msgid "Older posts"
 msgstr "Mensajes antiguos"
 
 #: inc/template-tags.php:31
-#@ hired
+#@ mynameistrevor
 msgid "Newer posts"
 msgstr "Mensajes más recientes"
 
 #: inc/template-tags.php:56
-#@ hired
+#@ mynameistrevor
 msgid "Post navigation"
 msgstr "Navegación de correos"
 
 #: inc/template-tags.php:86
 #, php-format
-#@ hired
+#@ mynameistrevor
 msgctxt "post date"
 msgid "Posted on %s"
 msgstr "Publicada en %s"
 
 #: inc/template-tags.php:91
 #, php-format
-#@ hired
+#@ mynameistrevor
 msgctxt "post author"
 msgid "by %s"
 msgstr "por %s"
@@ -330,119 +330,119 @@ msgstr "por %s"
 #. translators: used between list items, there is a space after the comma
 #: inc/template-tags.php:108
 #: inc/template-tags.php:114
-#@ hired
+#@ mynameistrevor
 msgid ", "
 msgstr ", "
 
 #: inc/template-tags.php:110
 #, php-format
-#@ hired
+#@ mynameistrevor
 msgid "Posted in %1$s"
 msgstr "Publicada en %1$ s"
 
 #: inc/template-tags.php:116
 #, php-format
-#@ hired
+#@ mynameistrevor
 msgid "Tagged %1$s"
 msgstr "Etiquetado %1$s"
 
 #: inc/template-tags.php:122
-#@ hired
+#@ mynameistrevor
 msgid "Leave a comment"
 msgstr "Deja un comentario"
 
 #: inc/template-tags.php:122
-#@ hired
+#@ mynameistrevor
 msgid "1 Comment"
 msgstr "1 comentario"
 
 #: inc/template-tags.php:122
-#@ hired
+#@ mynameistrevor
 msgid "% Comments"
 msgstr "% Comentarios"
 
 #: inc/template-tags.php:143
 #, php-format
-#@ hired
+#@ mynameistrevor
 msgid "Category: %s"
 msgstr "Categoría: %s"
 
 #: inc/template-tags.php:145
 #, php-format
-#@ hired
+#@ mynameistrevor
 msgid "Tag: %s"
 msgstr "Etiqueta: %s"
 
 #: inc/template-tags.php:153
-#@ hired
+#@ mynameistrevor
 msgctxt "daily archives date format"
 msgid "F j, Y"
 msgstr ""
 
 #: inc/template-tags.php:156
-#@ hired
+#@ mynameistrevor
 msgctxt "post format archive title"
 msgid "Asides"
 msgstr "Apartes"
 
 #: inc/template-tags.php:158
-#@ hired
+#@ mynameistrevor
 msgctxt "post format archive title"
 msgid "Galleries"
 msgstr "Galerías de arte"
 
 #: inc/template-tags.php:160
-#@ hired
+#@ mynameistrevor
 msgctxt "post format archive title"
 msgid "Images"
 msgstr "Imágenes"
 
 #: inc/template-tags.php:162
-#@ hired
+#@ mynameistrevor
 msgctxt "post format archive title"
 msgid "Videos"
 msgstr "Vídeos"
 
 #: inc/template-tags.php:164
-#@ hired
+#@ mynameistrevor
 msgctxt "post format archive title"
 msgid "Quotes"
 msgstr "Comillas"
 
 #: inc/template-tags.php:166
-#@ hired
+#@ mynameistrevor
 msgctxt "post format archive title"
 msgid "Links"
 msgstr "Enlaces"
 
 #: inc/template-tags.php:168
-#@ hired
+#@ mynameistrevor
 msgctxt "post format archive title"
 msgid "Statuses"
 msgstr "Estados"
 
 #: inc/template-tags.php:170
-#@ hired
+#@ mynameistrevor
 msgctxt "post format archive title"
 msgid "Audio"
 msgstr "Audio"
 
 #: inc/template-tags.php:172
-#@ hired
+#@ mynameistrevor
 msgctxt "post format archive title"
 msgid "Chats"
 msgstr "Charlas"
 
 #: inc/template-tags.php:175
 #, php-format
-#@ hired
+#@ mynameistrevor
 msgid "Archives: %s"
 msgstr "Archivos: %s"
 
 #. translators: 1: Taxonomy singular name, 2: Current taxonomy term
 #: inc/template-tags.php:179
 #, php-format
-#@ hired
+#@ mynameistrevor
 msgid "%1$s: %2$s"
 msgstr ""
 
@@ -464,7 +464,7 @@ msgstr ""
 
 #: panel/class-tgm-plugin-activation.php:310
 #, php-format
-#@ hired
+#@ mynameistrevor
 msgid "This theme requires the following plugin: %1$s."
 msgid_plural "This theme requires the following plugins: %1$s."
 msgstr[0] "Este tema requiere el siguiente plugin: %1$s."
@@ -472,7 +472,7 @@ msgstr[1] "Este tema requiere los siguientes plugins: %1$s."
 
 #: panel/class-tgm-plugin-activation.php:340
 #, php-format
-#@ hired
+#@ mynameistrevor
 msgid "The following required plugin is currently inactive: %1$s."
 msgid_plural "The following required plugins are currently inactive: %1$s."
 msgstr[0] "El siguiente requiere plugin está actualmente inactiva: %1$s."
@@ -480,7 +480,7 @@ msgstr[1] "El siguiente requiere los plugins son actualmente inactivos: %1$s."
 
 #: panel/class-tgm-plugin-activation.php:345
 #, php-format
-#@ hired
+#@ mynameistrevor
 msgid "The following recommended plugin is currently inactive: %1$s."
 msgid_plural "The following recommended plugins are currently inactive: %1$s."
 msgstr[0] "Recomienda el siguiente plugin está actualmente inactiva: %1$s."
@@ -488,21 +488,21 @@ msgstr[1] "Recomienda lo siguiente los plugins son actualmente inactivos: %1$s."
 
 #: panel/class-tgm-plugin-activation.php:325
 #, php-format
-#@ hired
+#@ mynameistrevor
 msgid "The following plugin needs to be updated to its latest version to ensure maximum compatibility with this theme: %1$s."
 msgid_plural "The following plugins need to be updated to their latest version to ensure maximum compatibility with this theme: %1$s."
 msgstr[0] "El siguiente plugin debe actualizarse a la versión más reciente para asegurar la máxima compatibilidad con este tema: %1$s."
 msgstr[1] "Los siguientes plugins necesitan actualizarse a la versión más reciente para asegurar la máxima compatibilidad con este tema: %1$s."
 
 #: panel/class-tgm-plugin-activation.php:355
-#@ hired
+#@ mynameistrevor
 msgid "Begin installing plugin"
 msgid_plural "Begin installing plugins"
 msgstr[0] "Comenzar a instalar el plugin"
 msgstr[1] "Comenzar a instalar plugins"
 
 #: panel/class-tgm-plugin-activation.php:365
-#@ hired
+#@ mynameistrevor
 msgid "Begin activating plugin"
 msgid_plural "Begin activating plugins"
 msgstr[0] "Comenzar a activar plugin"
@@ -684,628 +684,628 @@ msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
 #: panel/theme-admin-page.php:35
-#@ hired
+#@ mynameistrevor
 msgid "Documentation"
 msgstr "Documentación"
 
 #: panel/theme-admin-page.php:43
-#@ hired
+#@ mynameistrevor
 msgid "Read Docs"
 msgstr "Leer Docs"
 
 #: search.php:12
 #, php-format
-#@ hired
+#@ mynameistrevor
 msgid "Search Results for: %s"
 msgstr "Resultados de la búsqueda: %s"
 
 #: widgets/contact-info.php:12
-#@ hired
+#@ mynameistrevor
 msgid "Display your contact info"
 msgstr "Mostrar tu información de contacto"
 
 #: widgets/contact-info.php:52
 #: widgets/video-widget.php:49
-#@ hired
+#@ mynameistrevor
 msgid "Title"
 msgstr "Título"
 
 #: widgets/contact-info.php:60
-#@ hired
+#@ mynameistrevor
 msgid "Enter your address"
 msgstr "Introduzca su dirección de"
 
 #: widgets/contact-info.php:66
-#@ hired
+#@ mynameistrevor
 msgid "Enter your phone number"
 msgstr "Ingrese su número de teléfono"
 
 #: widgets/contact-info.php:72
-#@ hired
+#@ mynameistrevor
 msgid "Enter your email address"
 msgstr "Introduzca su dirección de correo electrónico"
 
 #: widgets/contact-info.php:170
-#@ hired
+#@ mynameistrevor
 msgid "Contact info"
 msgstr "Información de contacto"
 
 #: widgets/contact-info.php:194
-#@ hired
+#@ mynameistrevor
 msgid "Address: "
 msgstr "Dirección: "
 
 #: widgets/contact-info.php:204
-#@ hired
+#@ mynameistrevor
 msgid "Phone: "
 msgstr "Teléfono: "
 
 #: widgets/contact-info.php:214
-#@ hired
+#@ mynameistrevor
 msgid "Email: "
 msgstr "Correo electrónico: "
 
 #: widgets/video-widget.php:13
-#@ hired
+#@ mynameistrevor
 msgid "Video for your sidebar."
 msgstr "Video para matarlo."
 
 #: widgets/video-widget.php:57
-#@ hired
+#@ mynameistrevor
 msgid "Paste the URL of the video (only from a network that supports oEmbed, like Youtube, Vimeo etc.):"
 msgstr "Pegar la dirección URL del vídeo (sólo desde una red que soporta oEmbed, como Youtube, Vimeo etc..):"
 
 #: widgets/video-widget.php:151
-#@ hired
+#@ mynameistrevor
 msgid "Video"
 msgstr "Video"
 
 #: inc/customizer.php:1163
-#@ hired
+#@ mynameistrevor
 msgid "Footer Options"
 msgstr "Opciones de pie de página"
 
 #: inc/customizer.php:1164
-#@ hired
+#@ mynameistrevor
 msgid "Edit your footer options"
 msgstr "Editar las opciones de pie de página"
 
 #: inc/customizer.php:318
-#@ hired
+#@ mynameistrevor
 msgid "Edit your social media icons"
 msgstr "Editar tus iconos de redes sociales"
 
 #: inc/customizer.php:984
-#@ hired
+#@ mynameistrevor
 msgid "Entry Title Color"
 msgstr "Entrada título Color"
 
 #: inc/customizer.php:872
-#@ hired
+#@ mynameistrevor
 msgid "Background Color"
 msgstr "Color de fondo"
 
 #: comments.php:38
 #: comments.php:59
-#@ hired
+#@ mynameistrevor
 msgid "Older Comments"
 msgstr "Mayores comentarios"
 
 #: comments.php:39
 #: comments.php:60
-#@ hired
+#@ mynameistrevor
 msgid "Newer Comments"
 msgstr "Comentarios más recientes"
 
 #: functions.php:100
-#@ hired
+#@ mynameistrevor
 msgid "Drag the MT - Social Icons widget here."
 msgstr "Arrastre el MT - widget de iconos sociales aquí."
 
 #: functions.php:98
-#@ hired
+#@ mynameistrevor
 msgid "Social Widget Area"
 msgstr "Área social Widget"
 
 #: inc/customizer.php:49
-#@ hired
+#@ mynameistrevor
 msgid "Theme Colors"
 msgstr "Tema colores"
 
 #: inc/customizer.php:28
-#@ hired
+#@ mynameistrevor
 msgid "Edit your general color settings."
 msgstr "Edite la configuración general del color."
 
 #: inc/customizer.php:36
-#@ hired
+#@ mynameistrevor
 msgid "Navigation"
 msgstr "Navegación"
 
 #: inc/customizer.php:37
-#@ hired
+#@ mynameistrevor
 msgid "Edit your theme navigation settings."
 msgstr "Edite la configuración de navegación temática."
 
 #: inc/customizer.php:42
-#@ hired
+#@ mynameistrevor
 msgid "Navigation Settings"
 msgstr "Configuración de navegación"
 
 #: inc/customizer.php:27
-#@ hired
+#@ mynameistrevor
 msgid "General Colors"
 msgstr "General colores"
 
 #: inc/customizer.php:73
-#@ hired
+#@ mynameistrevor
 msgid "Menu Toggle Display"
 msgstr "Alternar pantalla del menú"
 
 #: inc/customizer.php:77
-#@ hired
+#@ mynameistrevor
 msgid "Icon"
 msgstr "Icono"
 
 #: inc/customizer.php:79
-#@ hired
+#@ mynameistrevor
 msgid "Icon and Menu"
 msgstr "Icono y menú"
 
 #: inc/customizer.php:196
-#@ hired
+#@ mynameistrevor
 msgid "Logo Size"
 msgstr "Tamaño de la insignia"
 
 #: inc/customizer.php:197
-#@ hired
+#@ mynameistrevor
 msgid "Change the width of the Logo in PX. Only enter numeric value."
 msgstr "Cambiar el ancho del logotipo en PX. Sólo ingrese valor numérico."
 
 #: inc/customizer.php:434
-#@ hired
+#@ mynameistrevor
 msgid "Home Page Options"
 msgstr "Opciones de la página de inicio"
 
 #: inc/customizer.php:660
 #: inc/customizer.php:896
-#@ hired
+#@ mynameistrevor
 msgid "Heading Color"
 msgstr "Hacia el Color"
 
 #: inc/customizer.php:684
-#@ hired
+#@ mynameistrevor
 msgid "Link Hover Color"
 msgstr "Hover Color del vínculo"
 
 #: inc/customizer.php:996
-#@ hired
+#@ mynameistrevor
 msgid "Button Color"
 msgstr "Color del botón"
 
 #: inc/customizer.php:1008
-#@ hired
+#@ mynameistrevor
 msgid "Button Hover Color"
 msgstr "Botón Hover Color"
 
 #: inc/customizer.php:1196
-#@ hired
+#@ mynameistrevor
 msgid "Hide Footer Byline"
 msgstr "Ocultar columna de pie de página"
 
 #: inc/customizer.php:323
-#@ hired
+#@ mynameistrevor
 msgid "Social Media Settings"
 msgstr "Configuración de las redes sociales"
 
 #: inc/customizer.php:341
-#@ hired
+#@ mynameistrevor
 msgid "Social Icon Size"
 msgstr "Tamaño de los iconos sociales"
 
 #: inc/customizer.php:960
-#@ hired
+#@ mynameistrevor
 msgid "Page Colors"
 msgstr "Página de colores"
 
 #: inc/customizer.php:962
-#@ hired
+#@ mynameistrevor
 msgid "Set your page colors."
 msgstr "Definir colores de tu página."
 
 #: inc/customizer.php:85
-#@ hired
+#@ mynameistrevor
 msgid "Navigation Colors"
 msgstr "Colores de navegación"
 
 #: inc/customizer.php:87
-#@ hired
+#@ mynameistrevor
 msgid "Set your theme navigation colors."
 msgstr "Definir tu tema navegación colores."
 
 #: inc/customizer.php:1023
-#@ hired
+#@ mynameistrevor
 msgid "Fonts"
 msgstr "Fuentes"
 
 #: inc/customizer.php:1075
-#@ hired
+#@ mynameistrevor
 msgid "Body Font Size"
 msgstr "Tamaño de la fuente del cuerpo"
 
 #: inc/customizer.php:1123
-#@ hired
+#@ mynameistrevor
 msgid "Blog"
 msgstr "Blog"
 
 #: inc/customizer.php:696
-#@ hired
+#@ mynameistrevor
 msgid "Icon Color"
 msgstr "Icono Color"
 
 #: panel/theme-admin-page.php:23
-#@ hired
+#@ mynameistrevor
 msgid "Premium Plugins"
 msgstr "Plugins Premium"
 
 #: panel/theme-admin-page.php:31
-#@ hired
+#@ mynameistrevor
 msgid "Get Plugins"
 msgstr "Conseguir Plugins"
 
 #: panel/theme-admin-page.php:173
-#@ hired
+#@ mynameistrevor
 msgid "Changelog"
 msgstr "Changelog"
 
 #: panel/theme-admin-page.php:177
-#@ hired
+#@ mynameistrevor
 msgid "1.0.0 - New Theme!"
 msgstr "1.0.0 - nuevo tema!"
 
 #: widgets/contact-info.php:14
-#@ hired
+#@ mynameistrevor
 msgid "MT - Contact Info Widget"
 msgstr "MT - información de contacto Widget"
 
 #: widgets/video-widget.php:15
-#@ hired
+#@ mynameistrevor
 msgid "MT - Video Widget"
 msgstr "MT - vídeo Widget"
 
 #: widgets/widget-mt-social.php:11
-#@ hired
+#@ mynameistrevor
 msgid "Drag this widget to the Social Widget Area."
 msgstr "Arrastre este widget para el área Social del Widget."
 
 #: widgets/widget-mt-social.php:13
-#@ hired
+#@ mynameistrevor
 msgid "MT - Social Icons"
 msgstr "MT - iconos sociales"
 
 #: widgets/widget-mt-social.php:104
-#@ hired
+#@ mynameistrevor
 msgid "Google URL:"
 msgstr "Google URL:"
 
 #: widgets/widget-mt-social.php:144
-#@ hired
+#@ mynameistrevor
 msgid "Youtube URL:"
 msgstr "URL de YouTube:"
 
 #: 404.php:12
-#@ hired
+#@ mynameistrevor
 msgid "Oops! That page can&rsquo;t be found."
 msgstr "¡ Uy! Esa página no se encuentra."
 
 #: 404.php:23
-#@ hired
+#@ mynameistrevor
 msgid "It looks like nothing was found at this location. Maybe try a search?"
 msgstr "Parece que en este lugar no se encontró nada. ¿Tal vez intente buscar?"
 
 #: inc/customizer.php:97
-#@ hired
+#@ mynameistrevor
 msgid "Navigation Button Background"
 msgstr "Fondo de botón de navegación"
 
 #: inc/customizer.php:122
-#@ hired
+#@ mynameistrevor
 msgid "Navigation Button Icon"
 msgstr "Icono de botón de navegación"
 
 #: inc/customizer.php:134
-#@ hired
+#@ mynameistrevor
 msgid "Navigation Background"
 msgstr "Fondo de navegación"
 
 #: inc/customizer.php:146
-#@ hired
+#@ mynameistrevor
 msgid "Navigation Link"
 msgstr "Vínculo de navegación"
 
 #: inc/customizer.php:158
-#@ hired
+#@ mynameistrevor
 msgid "Navigation Link Hover"
 msgstr "Navegación enlace Hover"
 
 #: inc/customizer.php:357
-#@ hired
+#@ mynameistrevor
 msgid "Social Icon Bar Color"
 msgstr "Color de la barra de iconos sociales"
 
 #: inc/customizer.php:394
-#@ hired
+#@ mynameistrevor
 msgid "Social Icon Background Color"
 msgstr "Color de fondo del icono social"
 
 #: inc/customizer.php:406
-#@ hired
+#@ mynameistrevor
 msgid "Social Icon Hover Background Color"
 msgstr "Icono social Hover Color de fondo"
 
 #: inc/customizer.php:418
-#@ hired
+#@ mynameistrevor
 msgid "Social Icon Border Color"
 msgstr "Color del borde icono social"
 
 #: inc/customizer.php:435
-#@ hired
+#@ mynameistrevor
 msgid "Edit your home page settings. Choose from any of <a href=\"http://fortawesome.github.io/Font-Awesome/cheatsheet/\" target=\"_blank\">these icons</a>. Example: \"fa-arrow-right\"."
 msgstr ""
 
 #: inc/customizer.php:440
-#@ hired
+#@ mynameistrevor
 msgid "Home Content"
 msgstr "Contenido Página"
 
 #: inc/customizer.php:442
-#@ hired
+#@ mynameistrevor
 msgid "Edit the options for the home page."
 msgstr "Editar las opciones de la página de inicio."
 
 #: inc/customizer.php:451
 #: inc/customizer.php:830
-#@ hired
+#@ mynameistrevor
 msgid "Background Image"
 msgstr "Imagen de fondo"
 
 #: inc/customizer.php:465
-#@ hired
+#@ mynameistrevor
 msgid "Title Text"
 msgstr "Texto de título"
 
 #: inc/customizer.php:478
-#@ hired
+#@ mynameistrevor
 msgid "Address Text"
 msgstr "Dirección texto"
 
 #: inc/customizer.php:491
-#@ hired
+#@ mynameistrevor
 msgid "Address Icon"
 msgstr "Dirección icono"
 
 #: inc/customizer.php:505
-#@ hired
+#@ mynameistrevor
 msgid "Email"
 msgstr "Correo electrónico"
 
 #: inc/customizer.php:518
-#@ hired
+#@ mynameistrevor
 msgid "Email Icon"
 msgstr "Icono de correo electrónico"
 
 #: inc/customizer.php:532
-#@ hired
+#@ mynameistrevor
 msgid "Phone"
 msgstr "Teléfono"
 
 #: inc/customizer.php:545
-#@ hired
+#@ mynameistrevor
 msgid "Phone Icon"
 msgstr "Icono de teléfono"
 
 #: inc/customizer.php:574
-#@ hired
+#@ mynameistrevor
 msgid "Button Two Text"
 msgstr "Texto del botón dos"
 
 #: inc/customizer.php:588
-#@ hired
+#@ mynameistrevor
 msgid "Button Two URL"
 msgstr "Botón dos URL"
 
 #: inc/customizer.php:603
-#@ hired
+#@ mynameistrevor
 msgid "Button Two External URL Option"
 msgstr "Opción botón dos URL externa"
 
 #: inc/customizer.php:604
-#@ hired
+#@ mynameistrevor
 msgid "If you use an external URL, leave the Button Two URL field above empty. Must include http:// before any URL."
 msgstr "Si utilizas una URL externa, deje el campo URL dos botón arriba vacío. Debe incluir http:// antes de cualquier URL."
 
 #: inc/customizer.php:613
-#@ hired
+#@ mynameistrevor
 msgid "Home Color Options"
 msgstr "Opciones de Color Inicio"
 
 #: inc/customizer.php:615
-#@ hired
+#@ mynameistrevor
 msgid "Edit the color options for the home page."
 msgstr "Editar las opciones de color para la página de inicio."
 
 #: inc/customizer.php:625
-#@ hired
+#@ mynameistrevor
 msgid "Home Page Background Color"
 msgstr "Color de fondo de la página de inicio"
 
 #: inc/customizer.php:636
-#@ hired
+#@ mynameistrevor
 msgid "Info Background Color"
 msgstr "Color de fondo de la información"
 
 #: inc/customizer.php:708
-#@ hired
+#@ mynameistrevor
 msgid "First Button Color"
 msgstr "Primer botón Color"
 
 #: inc/customizer.php:720
-#@ hired
+#@ mynameistrevor
 msgid "First Button Text Color"
 msgstr "Primer botón Color de texto"
 
 #: inc/customizer.php:732
-#@ hired
+#@ mynameistrevor
 msgid "First Button Border Color"
 msgstr "Primer botón Color del borde"
 
 #: inc/customizer.php:744
-#@ hired
+#@ mynameistrevor
 msgid "First Button Hover Color"
 msgstr "Primer botón Hover Color"
 
 #: inc/customizer.php:757
-#@ hired
+#@ mynameistrevor
 msgid "Second Button Color"
 msgstr "Segundo botón Color"
 
 #: inc/customizer.php:769
-#@ hired
+#@ mynameistrevor
 msgid "Second Button Text Color"
 msgstr "Segundo botón Color de texto"
 
 #: inc/customizer.php:781
-#@ hired
+#@ mynameistrevor
 msgid "Second Button Border Color"
 msgstr "Segundo botón Color del borde"
 
 #: inc/customizer.php:793
-#@ hired
+#@ mynameistrevor
 msgid "Second Button Hover Color"
 msgstr "Segundo botón Hover Color"
 
 #: inc/customizer.php:805
-#@ hired
+#@ mynameistrevor
 msgid "Home Divider Color"
 msgstr "Divisor casa Color"
 
 #: inc/customizer.php:972
-#@ hired
+#@ mynameistrevor
 msgid "Page Header Background"
 msgstr "Fondo encabezado de página"
 
 #: inc/customizer.php:1095
-#@ hired
+#@ mynameistrevor
 msgid "Select your desired font for the headings. Montserrat is the default Heading font."
 msgstr "Seleccionar la fuente deseada para los títulos. Montserrat es la fuente de la dirección predeterminada."
 
 #: inc/customizer.php:1111
-#@ hired
+#@ mynameistrevor
 msgid "Select your desired font for the body."
 msgstr "Seleccione la fuente deseada para el cuerpo."
 
 #: inc/customizer.php:1134
-#@ hired
+#@ mynameistrevor
 msgid "Blog Archive Entry Background"
 msgstr "Fondo entrada Blog Archive"
 
 #: inc/customizer.php:1146
-#@ hired
+#@ mynameistrevor
 msgid "Blog Post Content Background"
 msgstr "Fondo contenido Blog Post"
 
 #: panel/theme-admin-page.php:14
-#@ hired
-msgid "Hired Theme Details"
-msgstr "Detalles tema Hired"
+#@ mynameistrevor
+msgid "mynameistrevor Theme Details"
+msgstr "Detalles tema mynameistrevor"
 
 #: panel/theme-admin-page.php:19
-#@ hired
-msgid "Thank you for using Hired!"
-msgstr "Gracias por usar Hired!"
+#@ mynameistrevor
+msgid "Thank you for using mynameistrevor!"
+msgstr "Gracias por usar mynameistrevor!"
 
 #: inc/customizer.php:109
-#@ hired
+#@ mynameistrevor
 msgid "Navigation Button Hover Background"
 msgstr "Fondo de navegación botón activable"
 
 #: inc/customizer.php:492
-#@ hired
+#@ mynameistrevor
 msgid "Suggested: fa-map-marker"
 msgstr "Sugerido: fa-map-marker"
 
 #: inc/customizer.php:519
-#@ hired
+#@ mynameistrevor
 msgid "Suggested: fa-comment"
 msgstr "Sugerido: fa-comment"
 
 #: inc/customizer.php:546
-#@ hired
+#@ mynameistrevor
 msgid "Suggested: fa-phone"
 msgstr "Sugerido: fa-phone"
 
 #: inc/customizer.php:559
-#@ hired
+#@ mynameistrevor
 msgid "Button One Text ( About Me )"
 msgstr "Botón texto (sobre mí)"
 
 #: inc/customizer.php:560
-#@ hired
+#@ mynameistrevor
 msgid "This button links to the side About Me toggle section."
 msgstr "Este botón enlaza al lado de mi sección de palanca."
 
 #: inc/customizer.php:575
-#@ hired
+#@ mynameistrevor
 msgid "This button should link to something like a Resume or CV."
 msgstr "Este botón debe vincular a algo como un curriculum vitae o CV."
 
 #: inc/customizer.php:819
-#@ hired
+#@ mynameistrevor
 msgid "Home - About Me Toggle Section"
 msgstr "Inicio - Acerca de mí Alternar sección"
 
 #: inc/customizer.php:821
-#@ hired
+#@ mynameistrevor
 msgid "Edit the side toggle About Me section of your home page."
 msgstr "Editar la palanca de lado sobre mi sección de tu página de inicio."
 
 #: inc/customizer.php:844
-#@ hired
+#@ mynameistrevor
 msgid "About Me Title"
 msgstr "Acerca de mi título"
 
 #: inc/customizer.php:857
-#@ hired
+#@ mynameistrevor
 msgid "About Me Paragraph"
 msgstr "Acerca de mi párrafo"
 
 #: inc/customizer.php:1207
-#@ hired
+#@ mynameistrevor
 msgid "Home - Footer Text"
 msgstr "Inicio - texto de pie de página"
 
 #: inc/customizer.php:1219
-#@ hired
+#@ mynameistrevor
 msgid "Home - Footer Link"
 msgstr "Inicio - enlace de pie de página"
 
 #: inc/customizer.php:1231
-#@ hired
+#@ mynameistrevor
 msgid "Home - Footer Link Hover"
 msgstr "Inicio - Hover enlace de pie de página"
 
 #: inc/customizer.php:1245
-#@ hired
+#@ mynameistrevor
 msgid "Animation Effects"
 msgstr "Efectos de animación"
 
 #: inc/customizer.php:1247
-#@ hired
+#@ mynameistrevor
 msgid "Get yourself animated or disable it."
 msgstr "Búscate animado o deshabilitarlo."
 
 #: inc/customizer.php:1261
-#@ hired
+#@ mynameistrevor
 msgid "Check this box if you want to disable the animations."
 msgstr "Marque esta casilla si desea deshabilitar las animaciones."
 
@@ -1316,7 +1316,7 @@ msgstr ""
 
 #: panel/class-tgm-plugin-activation.php:315
 #, php-format
-#@ hired
+#@ mynameistrevor
 msgid "First time using ModernThemes? Download our free <a href=\"http://modernthemes.net/plugins/\" target=\"_blank\">Premium Plugins</a>. We also recommend certain plugins if you desire additional functionality (like %1$s)."
 msgid_plural "First time using ModernThemes? Download our free <a href=\"http://modernthemes.net/plugins/\" target=\"_blank\">Premium Plugins</a>. We also recommend certain plugins if you desire additional functionality (like %1$s)."
 msgstr[0] ""
@@ -1324,7 +1324,7 @@ msgstr[1] ""
 
 #: panel/class-tgm-plugin-activation.php:320
 #, php-format
-#@ hired
+#@ mynameistrevor
 msgid "Sorry, but you do not have the correct permissions to install the %1$s plugin."
 msgid_plural "Sorry, but you do not have the correct permissions to install the %1$s plugins."
 msgstr[0] ""
@@ -1332,7 +1332,7 @@ msgstr[1] ""
 
 #: panel/class-tgm-plugin-activation.php:330
 #, php-format
-#@ hired
+#@ mynameistrevor
 msgid "There is an update available for: %1$s."
 msgid_plural "There are updates available for the following plugins: %1$s."
 msgstr[0] ""
@@ -1340,7 +1340,7 @@ msgstr[1] ""
 
 #: panel/class-tgm-plugin-activation.php:335
 #, php-format
-#@ hired
+#@ mynameistrevor
 msgid "Sorry, but you do not have the correct permissions to update the %1$s plugin."
 msgid_plural "Sorry, but you do not have the correct permissions to update the %1$s plugins."
 msgstr[0] ""
@@ -1348,14 +1348,14 @@ msgstr[1] ""
 
 #: panel/class-tgm-plugin-activation.php:350
 #, php-format
-#@ hired
+#@ mynameistrevor
 msgid "Sorry, but you do not have the correct permissions to activate the %1$s plugin."
 msgid_plural "Sorry, but you do not have the correct permissions to activate the %1$s plugins."
 msgstr[0] ""
 msgstr[1] ""
 
 #: panel/class-tgm-plugin-activation.php:360
-#@ hired
+#@ mynameistrevor
 msgid "Begin updating plugin"
 msgid_plural "Begin updating plugins"
 msgstr[0] ""
@@ -1588,158 +1588,158 @@ msgid "Updating Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
 #: panel/theme-admin-page.php:27
-#@ hired
+#@ mynameistrevor
 msgid "Want to add more functionality to your theme? Use ModernThemes Premium Plugins to add content to your widget areas and pages."
 msgstr "¿Quieres añadir más funcionalidad a tu tema? Usar ModernThemes Premium Plugins para agregar contenido a tu widget áreas y páginas."
 
 #: panel/theme-admin-page.php:39
-#@ hired
-msgid "Check out our Hired Documentation to learn how to use Hired and for tutorials on theme functions. "
+#@ mynameistrevor
+msgid "Check out our mynameistrevor Documentation to learn how to use mynameistrevor and for tutorials on theme functions. "
 msgstr "Consulte nuestra documentación para aprender a usar contratado contratado y para tutoriales sobre las funciones del tema. "
 
 #: panel/theme-admin-page.php:47
-#@ hired
+#@ mynameistrevor
 msgid "ModernThemes"
 msgstr "ModernThemes"
 
 #: panel/theme-admin-page.php:51
-#@ hired
+#@ mynameistrevor
 msgid "Need some more themes? We have a large selection of both free and premium themes to add to your collection."
 msgstr "¿Necesita algunos temas más? Tenemos una gran selección de temas gratis y premium para agregar a su colección."
 
 #: panel/theme-admin-page.php:55
-#@ hired
+#@ mynameistrevor
 msgid "Visit Us"
 msgstr "Nos visitan"
 
 #: panel/theme-admin-page.php:60
-#@ hired
+#@ mynameistrevor
 msgid "Get the Premium Experience."
 msgstr "Haz la experiencia Premium."
 
 #: panel/theme-admin-page.php:64
 #: panel/theme-admin-page.php:134
-#@ hired
+#@ mynameistrevor
 msgid "Plugin Compatibility"
 msgstr "Compatibilidad con plugin"
 
 #: panel/theme-admin-page.php:68
-#@ hired
+#@ mynameistrevor
 msgid "Use our new free plugins with this theme to add functionality for things like Details Spinner, Animated Skill Bars, Past Employers, Testimonials and Projects."
 msgstr "Utilice nuestros nuevos plugins gratis con este tema para añadir funcionalidad para cosas como Spinner detalles, habilidad de animados bares, empleadores anteriores, testimonios y proyectos."
 
 #: panel/theme-admin-page.php:72
-#@ hired
+#@ mynameistrevor
 msgid "About Me Page"
 msgstr "Acerca de mi página"
 
 #: panel/theme-admin-page.php:76
-#@ hired
-msgid "Instead of one small section, Hired Premium comes with an About Me page, to really show off your skills. Use our plugin compatability to add to your content."
+#@ mynameistrevor
+msgid "Instead of one small section, mynameistrevor Premium comes with an About Me page, to really show off your skills. Use our plugin compatability to add to your content."
 msgstr "En lugar de una pequeña sección, contrató a Premium viene con un sobre mi página, para realmente demostrar sus habilidades. Utilice nuestra compatibilidad plugin para agregar a su contenido."
 
 #: panel/theme-admin-page.php:80
-#@ hired
+#@ mynameistrevor
 msgid "Video Background"
 msgstr "Video de fondo"
 
 #: panel/theme-admin-page.php:84
-#@ hired
+#@ mynameistrevor
 msgid "Make your Home Page a little more modern with a video background. The best looking websites give the best first impressions."
 msgstr "Hacer tu página de inicio un poco más moderno con un video de fondo. Los sitios mejor buscando darán la mejor primera impresión."
 
 #: panel/theme-admin-page.php:88
-#@ hired
+#@ mynameistrevor
 msgid "Masonry Blog"
 msgstr "Blog de albañilería"
 
 #: panel/theme-admin-page.php:92
-#@ hired
-msgid "Have a blog and want it to look a little cooler? Hired Premium comes with a masonry blog layout to make your blog a little more interesting."
+#@ mynameistrevor
+msgid "Have a blog and want it to look a little cooler? mynameistrevor Premium comes with a masonry blog layout to make your blog a little more interesting."
 msgstr "¿Tienes un blog y quieres que se vea un poco más fresco? Alquiler Premium viene con un diseño de blog de albañilería para hacer tu blog un poco más interesante."
 
 #: panel/theme-admin-page.php:96
-#@ hired
+#@ mynameistrevor
 msgid "Shortcodes Ultimate Extra"
 msgstr "Shortcodes Ultimate Extra"
 
 #: panel/theme-admin-page.php:100
-#@ hired
-msgid "Hired Premium comes with a Shortcodes Ultimate Extra add-on (regularly priced at $25) for <strong>free</strong>. Shortcodes Ultimate Extra features even more of your favorite shortcodes."
+#@ mynameistrevor
+msgid "mynameistrevor Premium comes with a Shortcodes Ultimate Extra add-on (regularly priced at $25) for <strong>free</strong>. Shortcodes Ultimate Extra features even more of your favorite shortcodes."
 msgstr "Contratados Premium viene con un complemento Extra Ultimate Shortcodes (regularmente a un precio de $25) para <strong>libre</strong>. Shortcodes Ultimate Extras aún más de tus favoritos shortcodes."
 
 #: panel/theme-admin-page.php:104
-#@ hired
+#@ mynameistrevor
 msgid "Access an additional 65 Google fonts with Proper right in the WordPress customizer."
 msgstr "Acceder a un 65 fuentes adicionales de Google con adecuada justo en el personalizador de WordPress."
 
 #: panel/theme-admin-page.php:108
-#@ hired
+#@ mynameistrevor
 msgid "PSD Files"
 msgstr "Archivos PSD"
 
 #: panel/theme-admin-page.php:112
-#@ hired
+#@ mynameistrevor
 msgid "Premium versions include PSD files. Preview your own content or showcase a customized version for your clients."
 msgstr "Versiones Premium incluyen archivos PSD. Escuchar su propio contenido o mostrar una versión personalizada para sus clientes."
 
 #: panel/theme-admin-page.php:116
-#@ hired
+#@ mynameistrevor
 msgid "Free Support"
 msgstr "Soporte gratuito"
 
 #: panel/theme-admin-page.php:120
-#@ hired
+#@ mynameistrevor
 msgid "Call on us to help you out. Premium themes come with free support that goes directly to our support staff."
 msgstr "Llame a nosotros para ayudarle hacia fuera. Temas Premium vienen con soporte gratuito que va directamente a nuestro personal de soporte."
 
 #: panel/theme-admin-page.php:124
-#@ hired
+#@ mynameistrevor
 msgid "View Premium Version"
 msgstr "Ver la versión Premium"
 
 #: panel/theme-admin-page.php:130
-#@ hired
+#@ mynameistrevor
 msgid "Premium Membership. Premium Experience."
 msgstr "Calidad de miembro. Experiencia Premium."
 
 #: panel/theme-admin-page.php:138
-#@ hired
+#@ mynameistrevor
 msgid "Use our new free plugins with this theme to add functionality for things like projects, clients, team members and more. Compatible with all premium themes!"
 msgstr "Utilice nuestros nuevos plugins gratis con este tema para agregar funcionalidad para cosas como proyectos, clientes, miembros del equipo y mucho más. Compatible con todos los temas premium!"
 
 #: panel/theme-admin-page.php:142
-#@ hired
+#@ mynameistrevor
 msgid "Agency Designed Themes"
 msgstr "La Agencia diseña temas"
 
 #: panel/theme-admin-page.php:146
-#@ hired
+#@ mynameistrevor
 msgid "Look as good as can be with our new premium themes. Each one is agency designed with modern styles and professional layouts."
 msgstr "Mira como puede ser con nuestros nuevos temas premium. Cada uno es diseñada con estilos modernos y diseños profesionales de agencia."
 
 #: panel/theme-admin-page.php:150
-#@ hired
+#@ mynameistrevor
 msgid "Membership Options"
 msgstr "Opciones de membresía"
 
 #: panel/theme-admin-page.php:154
-#@ hired
+#@ mynameistrevor
 msgid "We have options to fit every budget. Choose between a single theme, or access to all current and future themes for a year, or forever!"
 msgstr "Contamos con opciones para adaptarse a cada presupuesto. Elegir entre un solo tema, o acceso a todo actual y futuro temas para un año o para siempre!"
 
 #: panel/theme-admin-page.php:158
-#@ hired
+#@ mynameistrevor
 msgid "Access to New Themes"
 msgstr "Acceso a nuevos temas"
 
 #: panel/theme-admin-page.php:162
-#@ hired
+#@ mynameistrevor
 msgid "New themes added monthly! When you purchase a premium membership you get access to all premium themes, with new themes added monthly."
 msgstr "Temas nuevos añadidos cada mes! Cuando usted compra una membresía premium obtienes acceso a todos los temas premium, con temas nuevos que se agregan mensualmente."
 
 #: panel/theme-admin-page.php:167
-#@ hired
+#@ mynameistrevor
 msgid "Get Premium Membership"
 msgstr "Obtener membresía Premium"
 

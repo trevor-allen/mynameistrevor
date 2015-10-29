@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package hired
+ * @package mynameistrevor
  */
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
@@ -18,7 +18,7 @@
 
 <body <?php body_class('body-home'); ?>>
 <div id="page" class="hfeed site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'hired' ); ?></a>
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'mynameistrevor' ); ?></a>
 
 	<header id="masthead" class="site-header animated slideInLeft delay" role="banner">
 		<nav id="site-navigation" class="main-navigation" role="navigation">
@@ -27,7 +27,7 @@
 		
 			<?php 
 			
-				$menu_toggle_option = get_theme_mod( 'hired_menu_toggle', 'icon' ); 
+				$menu_toggle_option = get_theme_mod( 'mynameistrevor_menu_toggle', 'icon' ); 
 
 				$menu_display = '';
 
@@ -37,7 +37,7 @@
 			
 				} else if ( $menu_toggle_option == 'label' ) {
 				
-					$menu_display = esc_html_e( 'Menu', 'hired' );  
+					$menu_display = esc_html_e( 'Menu', 'mynameistrevor' );  
 			
 				} 
 
@@ -60,7 +60,7 @@
     
     <div class="site-branding-home animated fadeIn delay-3">
 		
-        <?php if ( get_theme_mod( 'hired_logo' ) ) : ?>
+        <?php if ( get_theme_mod( 'mynameistrevor_logo' ) ) : ?>
               
     			<div class="site-logo site-title"> 
                 
@@ -71,7 +71,7 @@
                     >
                         
                     	<img 
-                        	src='<?php echo esc_url( get_theme_mod( 'hired_logo' ) ); ?>' 
+                        	src='<?php echo esc_url( get_theme_mod( 'mynameistrevor_logo' ) ); ?>' 
 							
 							<?php if ( get_theme_mod( 'logo_size' ) ) : ?>
                             

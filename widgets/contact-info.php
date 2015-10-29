@@ -1,19 +1,19 @@
 <?php
 
 
-class hired_Contact_Info extends WP_Widget {  
+class mynameistrevor_Contact_Info extends WP_Widget {  
 
 
 
 // constructor
 
-    function hired_contact_info() {
+    function mynameistrevor_contact_info() {
 
-		$widget_ops = array('classname' => 'hired_contact_info_widget', 'description' => esc_html__( 'Display your contact info', 'hired') ); 
+		$widget_ops = array('classname' => 'mynameistrevor_contact_info_widget', 'description' => esc_html__( 'Display your contact info', 'mynameistrevor') ); 
 
-        parent::__construct(false, $name = esc_html__('MT - Contact Info Widget', 'hired'), $widget_ops);
+        parent::__construct(false, $name = esc_html__('MT - Contact Info Widget', 'mynameistrevor'), $widget_ops);
 
-		$this->alt_option_name = 'hired_contact_info';
+		$this->alt_option_name = 'mynameistrevor_contact_info';
 
 		
 
@@ -49,7 +49,7 @@ class hired_Contact_Info extends WP_Widget {
 
 	<p>
 
-	<label for="<?php echo sanitize_text_field( $this->get_field_id('title')); ?>"><?php esc_html_e('Title', 'hired'); ?></label> 
+	<label for="<?php echo sanitize_text_field( $this->get_field_id('title')); ?>"><?php esc_html_e('Title', 'mynameistrevor'); ?></label> 
 
 	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('title')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('title')); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" /> 
 
@@ -57,19 +57,19 @@ class hired_Contact_Info extends WP_Widget {
 
 
 
-	<p><label for="<?php echo sanitize_text_field( $this->get_field_id( 'address' )); ?>"><?php esc_html_e( 'Enter your address', 'hired' ); ?></label>
+	<p><label for="<?php echo sanitize_text_field( $this->get_field_id( 'address' )); ?>"><?php esc_html_e( 'Enter your address', 'mynameistrevor' ); ?></label>
 
 	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id( 'address' )); ?>" name="<?php echo sanitize_text_field( $this->get_field_name( 'address' )); ?>" type="text" value="<?php echo wp_kses_post( $address ); ?>" size="3" /></p>
 
 
 
-	<p><label for="<?php echo sanitize_text_field( $this->get_field_id( 'phone' )); ?>"><?php esc_html_e( 'Enter your phone number', 'hired' ); ?></label>
+	<p><label for="<?php echo sanitize_text_field( $this->get_field_id( 'phone' )); ?>"><?php esc_html_e( 'Enter your phone number', 'mynameistrevor' ); ?></label>
 
 	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id( 'phone' )); ?>" name="<?php echo sanitize_text_field( $this->get_field_name( 'phone' )); ?>" type="text" value="<?php echo wp_kses_post( $phone ); ?>" size="3" /></p>
 
 
 
-	<p><label for="<?php echo sanitize_text_field( $this->get_field_id( 'email' )); ?>"><?php esc_html_e( 'Enter your email address', 'hired' ); ?></label>
+	<p><label for="<?php echo sanitize_text_field( $this->get_field_id( 'email' )); ?>"><?php esc_html_e( 'Enter your email address', 'mynameistrevor' ); ?></label>
 
 	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id( 'email' )); ?>" name="<?php echo sanitize_text_field( $this->get_field_name( 'email' )); ?>" type="text" value="<?php echo sanitize_email( $email ); ?>" size="3" /></p>
 
@@ -101,9 +101,9 @@ class hired_Contact_Info extends WP_Widget {
 
 		$alloptions = wp_cache_get( 'alloptions', 'options' );
 
-		if ( isset($alloptions['hired_contact_info']) )
+		if ( isset($alloptions['mynameistrevor_contact_info']) )
 
-			delete_option('hired_contact_info');		  
+			delete_option('mynameistrevor_contact_info');		  
 
 		  
 
@@ -115,7 +115,7 @@ class hired_Contact_Info extends WP_Widget {
 
 	function flush_widget_cache() {
 
-		wp_cache_delete('hired_contact_info', 'widget');
+		wp_cache_delete('mynameistrevor_contact_info', 'widget');
 
 	}
 
@@ -129,7 +129,7 @@ class hired_Contact_Info extends WP_Widget {
 
 		if ( ! $this->is_preview() ) {
 
-			$cache = wp_cache_get( 'hired_contact_info', 'widget' );
+			$cache = wp_cache_get( 'mynameistrevor_contact_info', 'widget' );
 
 		}
 
@@ -167,7 +167,7 @@ class hired_Contact_Info extends WP_Widget {
 
 
 
-		$title = ( ! empty( $instance['title'] ) ) ? esc_attr( $instance['title'] ) : esc_html__( 'Contact info', 'hired' );
+		$title = ( ! empty( $instance['title'] ) ) ? esc_attr( $instance['title'] ) : esc_html__( 'Contact info', 'mynameistrevor' );
 
 		$title = apply_filters( 'widget_title', esc_attr( $title ), $instance, $this->id_base );
 
@@ -191,7 +191,7 @@ class hired_Contact_Info extends WP_Widget {
 
 			echo '<div class="contact-address">';
 
-			echo '<span>' . esc_html__('Address: ', 'hired') . '</span>' . wp_kses_post( $address );
+			echo '<span>' . esc_html__('Address: ', 'mynameistrevor') . '</span>' . wp_kses_post( $address );
 
 			echo '</div>';
 
@@ -201,7 +201,7 @@ class hired_Contact_Info extends WP_Widget {
 
 			echo '<div class="contact-phone">';
 
-			echo '<span>' . esc_html__('Phone: ', 'hired') . '</span>' . wp_kses_post( $phone );
+			echo '<span>' . esc_html__('Phone: ', 'mynameistrevor') . '</span>' . wp_kses_post( $phone );
 
 			echo '</div>';
 
@@ -211,7 +211,7 @@ class hired_Contact_Info extends WP_Widget {
 
 			echo '<div class="contact-email">';
 
-			echo '<span>' . esc_html__('Email: ', 'hired') . '</span>' . '<a href="mailto:' . sanitize_email( $email ) . '">' . sanitize_email( $email ) . '</a>';
+			echo '<span>' . esc_html__('Email: ', 'mynameistrevor') . '</span>' . '<a href="mailto:' . sanitize_email( $email ) . '">' . sanitize_email( $email ) . '</a>';
 
 			echo '</div>'; 
 
@@ -229,7 +229,7 @@ class hired_Contact_Info extends WP_Widget {
 
 			$cache[ $args['widget_id'] ] = ob_get_flush(); 
 
-			wp_cache_set( 'hired_contact_info', $cache, 'widget' ); 
+			wp_cache_set( 'mynameistrevor_contact_info', $cache, 'widget' ); 
 
 		} else {
 

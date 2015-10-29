@@ -29,8 +29,8 @@ function mynameistrevor_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
-	 * If you're building a theme based on hired, use a find and replace
-	 * to change 'hired' to the name of your theme in all the template files
+	 * If you're building a theme based on mynameistrevor, use a find and replace
+	 * to change 'mynameistrevor' to the name of your theme in all the template files
 	 */
 	load_theme_textdomain( 'mynameistrevor', get_template_directory() . '/languages' );
 
@@ -164,7 +164,7 @@ function mynameistrevor_scripts() {
 
 	wp_enqueue_script( 'mynameistrevor-menu', get_template_directory_uri() . '/js/jPushMenu.js', array('jquery'), false, true );
 
-	wp_enqueue_script( 'mynameistrevor-scripts', get_template_directory_uri() . '/js/hired.scripts.js', array(), false, true );
+	wp_enqueue_script( 'mynameistrevor-scripts', get_template_directory_uri() . '/js/mynameistrevor.scripts.js', array(), false, true );
 	
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -214,8 +214,8 @@ require get_template_directory() . '/panel/theme-admin-page.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
-require get_template_directory() . '/inc/hired-sanitize.php';
-require get_template_directory() . '/inc/hired-styles.php'; 
+require get_template_directory() . '/inc/mynameistrevor-sanitize.php';
+require get_template_directory() . '/inc/mynameistrevor-styles.php'; 
 
 /**
  * Load Jetpack compatibility file.
@@ -230,7 +230,7 @@ require get_template_directory() . '/inc/gfonts.php';
 /**
  * Sidebar widget columns
  */
-require get_template_directory() . '/inc/hired-sidebar-columns.php'; 
+require get_template_directory() . '/inc/mynameistrevor-sidebar-columns.php'; 
 
 /**
  * register your custom widgets

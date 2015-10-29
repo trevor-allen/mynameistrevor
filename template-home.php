@@ -10,7 +10,7 @@ get_header('home'); ?>
 
 	<?php if ( get_theme_mod( 'mynameistrevor_home_bg_image' ) ) : ?>
 
-        <div hidden id="home-background"><?php echo esc_url( get_theme_mod( 'hired_home_bg_image' )); ?></div>
+        <div hidden id="home-background"><?php echo esc_url( get_theme_mod( 'mynameistrevor_home_bg_image' )); ?></div>
 
 	<?php endif; ?>
 
@@ -26,7 +26,7 @@ get_header('home'); ?>
             <ul class="home-details">
             	<li>
                 	<?php if ( get_theme_mod( 'mynameistrevor_home_address_icon' ) ) : ?>
-                		<i class="fa <?php echo wp_kses_post( get_theme_mod( 'hired_home_address_icon' )); ?>"></i>
+                		<i class="fa <?php echo wp_kses_post( get_theme_mod( 'mynameistrevor_home_address_icon' )); ?>"></i>
                     <?php endif; ?>
 
                     <?php if ( get_theme_mod( 'mynameistrevor_home_address' ) ) : ?>
@@ -36,17 +36,17 @@ get_header('home'); ?>
 
                 <li>
                 	<?php if ( get_theme_mod( 'mynameistrevor_home_email_icon' ) ) : ?>
-                		<i class="fa <?php echo wp_kses_post( get_theme_mod( 'hired_home_email_icon' )); ?>"></i>
+                		<i class="fa <?php echo wp_kses_post( get_theme_mod( 'mynameistrevor_home_email_icon' )); ?>"></i>
                     <?php endif; ?>
 
                     <?php if ( get_theme_mod( 'mynameistrevor_home_email' ) ) : ?>
-                		<a href="mailto:<?php echo is_email( get_theme_mod( 'hired_home_email' )); ?>" target="_blank"><?php echo esc_html( get_theme_mod( 'hired_home_email' )); ?></a> 
+                		<a href="mailto:<?php echo is_email( get_theme_mod( 'mynameistrevor_home_email' )); ?>" target="_blank"><?php echo esc_html( get_theme_mod( 'mynameistrevor_home_email' )); ?></a> 
                     <?php endif; ?>
                 </li>
 
                 <li>
                 	<?php if ( get_theme_mod( 'mynameistrevor_home_phone_icon' ) ) : ?>
-                		<i class="fa <?php echo wp_kses_post( get_theme_mod( 'hired_home_phone_icon' )); ?>"></i>
+                		<i class="fa <?php echo wp_kses_post( get_theme_mod( 'mynameistrevor_home_phone_icon' )); ?>"></i>
                     <?php endif; ?>
 
                     <?php if ( get_theme_mod( 'mynameistrevor_home_phone' ) ) : ?>
@@ -68,7 +68,7 @@ get_header('home'); ?>
             <?php endif; ?>
 
             <?php if ( get_theme_mod( 'mynameistrevor_button_two_url' ) ) : ?>
-            	<a href="<?php echo esc_url( $hired_button_two_url ); ?>">
+            	<a href="<?php echo esc_url( $mynameistrevor_button_two_url ); ?>">
                 	<?php if ( get_theme_mod( 'mynameistrevor_home_button_text_two' ) ) : ?>
             			<button class="resume"><?php echo wp_kses_post( get_theme_mod( 'mynameistrevor_home_button_text_two' )); ?></button>
                     <?php endif; ?>
@@ -76,7 +76,7 @@ get_header('home'); ?>
             <?php endif; ?>
 
             <?php if ( get_theme_mod( 'mynameistrevor_home_button_two_url_text' ) ) : ?>
-            	<a href="<?php echo esc_url( $hired_home_button_two_url_text ); ?>" target="_blank">
+            	<a href="<?php echo esc_url( $mynameistrevor_home_button_two_url_text ); ?>" target="_blank">
                 	<?php if ( get_theme_mod( 'mynameistrevor_home_button_text_two' ) ) : ?>
             			<button class="resume"><?php echo wp_kses_post( get_theme_mod( 'mynameistrevor_home_button_text_two' )); ?></button>
                     <?php endif; ?>
@@ -93,7 +93,7 @@ get_header('home'); ?>
 <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right">
 	<div class="bio-image">
     	<?php if ( get_theme_mod( 'mynameistrevor_home_about_bg_image' ) ) : ?>
-    		<img src="<?php echo esc_url( get_theme_mod( 'hired_home_about_bg_image' )); ?>">
+    		<img src="<?php echo esc_url( get_theme_mod( 'mynameistrevor_home_about_bg_image' )); ?>">
         <?php endif; ?>
     </div>
     <div class="bio-content">
@@ -107,9 +107,9 @@ get_header('home'); ?>
             <?php endif; ?>
 
             <?php if ( get_theme_mod( 'mynameistrevor_about_me_button_url' ) ) : ?>
-            	<a href="<?php echo esc_url( get_page_link( get_theme_mod('hired_about_me_button_url'))); ?>">
+            	<a href="<?php echo esc_url( get_page_link( get_theme_mod('mynameistrevor_about_me_button_url'))); ?>">
                 	<?php if ( get_theme_mod( 'mynameistrevor_about_me_button_text' ) ) : ?>
-            			<button class="hired-about-button"><?php echo wp_kses_post( get_theme_mod( 'mynameistrevor_about_me_button_text' )); ?></button> 
+            			<button class="mynameistrevor-about-button"><?php echo wp_kses_post( get_theme_mod( 'mynameistrevor_about_me_button_text' )); ?></button> 
                     <?php endif; ?>
                 </a>
             <?php endif; ?>

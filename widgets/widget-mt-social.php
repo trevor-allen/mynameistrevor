@@ -2,14 +2,14 @@
 
 
 
-class hired_social extends WP_Widget {
+class mynameistrevor_social extends WP_Widget {
 // constructor
 
-    function hired_social() {
+    function mynameistrevor_social() {
 
-		$widget_ops = array('classname' => 'hired_social_widget', 'description' => esc_html__( 'Drag this widget to the Social Widget Area.', 'hired') );
-	        parent::__construct(false, $name = esc_html__('MT - Social Icons', 'hired'), $widget_ops);
-		$this->alt_option_name = 'hired_social_widget';
+		$widget_ops = array('classname' => 'mynameistrevor_social_widget', 'description' => esc_html__( 'Drag this widget to the Social Widget Area.', 'mynameistrevor') );
+	        parent::__construct(false, $name = esc_html__('MT - Social Icons', 'mynameistrevor'), $widget_ops);
+		$this->alt_option_name = 'mynameistrevor_social_widget';
 
 		add_action( 'save_post', array($this, 'flush_widget_cache') );
 		add_action( 'deleted_post', array($this, 'flush_widget_cache') );
@@ -42,7 +42,7 @@ class hired_social extends WP_Widget {
 
     <p>
 
-	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_fb_link')); ?>"><?php esc_html_e('Facebook URL:', 'hired'); ?></label>
+	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_fb_link')); ?>"><?php esc_html_e('Facebook URL:', 'mynameistrevor'); ?></label>
 
 	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('social_fb_link')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('social_fb_link')); ?>" type="text" value="<?php echo esc_url( $social_fb_link ); ?>" />
 
@@ -52,7 +52,7 @@ class hired_social extends WP_Widget {
 
     <p>
 
-        <label for="<?php echo sanitize_text_field( $this->get_field_id('social_github_link')); ?>"><?php esc_html_e('Github URL:', 'hired'); ?></label>
+        <label for="<?php echo sanitize_text_field( $this->get_field_id('social_github_link')); ?>"><?php esc_html_e('Github URL:', 'mynameistrevor'); ?></label>
 
 	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('social_github_link')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('social_github_link')); ?>" type="text" value="<?php echo esc_url( $social_github_link ); ?>" />
 
@@ -62,7 +62,7 @@ class hired_social extends WP_Widget {
 
     <p>
 
-	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_twitter_link')); ?>"><?php esc_html_e('Twitter URL:', 'hired'); ?></label>
+	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_twitter_link')); ?>"><?php esc_html_e('Twitter URL:', 'mynameistrevor'); ?></label>
 
 	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('social_twitter_link')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('social_twitter_link')); ?>" type="text" value="<?php echo esc_url( $social_twitter_link ); ?>" />
 
@@ -72,7 +72,7 @@ class hired_social extends WP_Widget {
 
     <p>
 
-	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_linked_link')); ?>"><?php esc_html_e('LinkedIn URL:', 'hired'); ?></label>
+	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_linked_link')); ?>"><?php esc_html_e('LinkedIn URL:', 'mynameistrevor'); ?></label>
 
 	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('social_linked_link')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('social_linked_link')); ?>" type="text" value="<?php echo esc_url( $social_linked_link ); ?>" /> 
 
@@ -82,7 +82,7 @@ class hired_social extends WP_Widget {
 
     <p>
 
-	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_google_link')); ?>"><?php esc_html_e('Google URL:', 'hired'); ?></label>
+	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_google_link')); ?>"><?php esc_html_e('Google URL:', 'mynameistrevor'); ?></label>
 
 	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('social_google_link')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('social_google_link')); ?>" type="text" value="<?php echo esc_url( $social_google_link ); ?>" />
 
@@ -92,7 +92,7 @@ class hired_social extends WP_Widget {
 
     <p>
 
-	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_instagram_link')); ?>"><?php esc_html_e('Instagram URL:', 'hired'); ?></label>
+	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_instagram_link')); ?>"><?php esc_html_e('Instagram URL:', 'mynameistrevor'); ?></label>
 
 	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('social_instagram_link')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('social_instagram_link')); ?>" type="text" value="<?php echo esc_url( $social_instagram_link ); ?>" />
 
@@ -102,7 +102,7 @@ class hired_social extends WP_Widget {
 
     <p>
 
-	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_flickr_link')); ?>"><?php esc_html_e('Flickr URL:', 'hired'); ?></label>
+	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_flickr_link')); ?>"><?php esc_html_e('Flickr URL:', 'mynameistrevor'); ?></label>
 
 	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('social_flickr_link')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('social_flickr_link')); ?>" type="text" value="<?php echo esc_url( $social_flickr_link ); ?>" />
 
@@ -112,7 +112,7 @@ class hired_social extends WP_Widget {
 
     <p>
 
-	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_pinterest_link')); ?>"><?php esc_html_e('Pinterest URL:', 'hired'); ?></label>
+	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_pinterest_link')); ?>"><?php esc_html_e('Pinterest URL:', 'mynameistrevor'); ?></label>
 
 	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('social_pinterest_link')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('social_pinterest_link')); ?>" type="text" value="<?php echo esc_url( $social_pinterest_link ); ?>" />
 
@@ -122,7 +122,7 @@ class hired_social extends WP_Widget {
 
     <p>
 
-	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_youtube_link')); ?>"><?php esc_html_e('Youtube URL:', 'hired'); ?></label>
+	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_youtube_link')); ?>"><?php esc_html_e('Youtube URL:', 'mynameistrevor'); ?></label>
 
 	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('social_youtube_link')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('social_youtube_link')); ?>" type="text" value="<?php echo esc_url( $social_youtube_link ); ?>" />
 
@@ -132,7 +132,7 @@ class hired_social extends WP_Widget {
 
     <p>
 
-	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_vimeo_link')); ?>"><?php esc_html_e('Vimeo URL:', 'hired'); ?></label>
+	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_vimeo_link')); ?>"><?php esc_html_e('Vimeo URL:', 'mynameistrevor'); ?></label>
 
 	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('social_vimeo_link')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('social_vimeo_link')); ?>" type="text" value="<?php echo esc_url( $social_vimeo_link ); ?>" />
 
@@ -142,7 +142,7 @@ class hired_social extends WP_Widget {
 
     <p>
 
-	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_tumblr_link')); ?>"><?php esc_html_e('Tumblr URL:', 'hired'); ?></label>
+	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_tumblr_link')); ?>"><?php esc_html_e('Tumblr URL:', 'mynameistrevor'); ?></label>
 
 	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('social_tumblr_link')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('social_tumblr_link')); ?>" type="text" value="<?php echo esc_url( $social_tumblr_link ); ?>" />
 
@@ -152,7 +152,7 @@ class hired_social extends WP_Widget {
 
     <p>
 
-	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_dribbble_link')); ?>"><?php esc_html_e('Dribbble URL:', 'hired'); ?></label>
+	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_dribbble_link')); ?>"><?php esc_html_e('Dribbble URL:', 'mynameistrevor'); ?></label>
 
 	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('social_dribbble_link')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('social_dribbble_link')); ?>" type="text" value="<?php echo esc_url( $social_dribbble_link ); ?>" />
 
@@ -162,7 +162,7 @@ class hired_social extends WP_Widget {
 
     <p>
 
-	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_rss_link')); ?>"><?php esc_html_e('RSS URL:', 'hired'); ?></label>
+	<label for="<?php echo sanitize_text_field( $this->get_field_id('social_rss_link')); ?>"><?php esc_html_e('RSS URL:', 'mynameistrevor'); ?></label>
 
 	<input class="widefat" id="<?php echo sanitize_text_field( $this->get_field_id('social_rss_link')); ?>" name="<?php echo sanitize_text_field( $this->get_field_name('social_rss_link')); ?>" type="text" value="<?php echo esc_url( $social_rss_link ); ?>" /> 
 
@@ -174,7 +174,7 @@ class hired_social extends WP_Widget {
 
     <input class="checkbox" type="checkbox" <?php checked( $social_url_path ); ?> id="<?php echo $this->get_field_id( 'social_url_path' ); ?>" name="<?php echo $this->get_field_name( 'social_url_path' ); ?>" />
 
-	<label for="<?php echo $this->get_field_id( 'social_url_path' ); ?>"><?php esc_html_e( 'Check this box to open links in a new window.', 'hired' ); ?></label>
+	<label for="<?php echo $this->get_field_id( 'social_url_path' ); ?>"><?php esc_html_e( 'Check this box to open links in a new window.', 'mynameistrevor' ); ?></label>
 
     </p>
 
@@ -222,9 +222,9 @@ class hired_social extends WP_Widget {
 
 		$alloptions = wp_cache_get( 'alloptions', 'options' );
 
-		if ( isset($alloptions['hired_social']) )
+		if ( isset($alloptions['mynameistrevor_social']) )
 
-			delete_option('hired_social');
+			delete_option('mynameistrevor_social');
 
 		return $instance;
 
@@ -233,7 +233,7 @@ class hired_social extends WP_Widget {
 
 	function flush_widget_cache() {
 
-		wp_cache_delete('hired_social', 'widget');
+		wp_cache_delete('mynameistrevor_social', 'widget');
 
 	}
 
@@ -245,7 +245,7 @@ class hired_social extends WP_Widget {
 
 		if ( ! $this->is_preview() ) {
 
-			$cache = wp_cache_get( 'hired_social', 'widget' );
+			$cache = wp_cache_get( 'mynameistrevor_social', 'widget' );
 
 		}
 
@@ -403,7 +403,7 @@ class hired_social extends WP_Widget {
 
 			$cache[ $args['widget_id'] ] = ob_get_flush();
 
-			wp_cache_set( 'hired_social', $cache, 'widget' );
+			wp_cache_set( 'mynameistrevor_social', $cache, 'widget' );
 
 		} else {
 

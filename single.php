@@ -2,7 +2,7 @@
 /**
  * The template for displaying all single posts.
  *
- * @package hired
+ * @package mynameistrevor
  */
 
 get_header(); ?>
@@ -24,7 +24,7 @@ get_header(); ?>
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 			<div class="entry-meta">
-				<?php hired_posted_on(); ?> 
+				<?php mynameistrevor_posted_on(); ?> 
 			</div><!-- .entry-meta -->
         </div>
         <div class="header-image-overlay"></div>

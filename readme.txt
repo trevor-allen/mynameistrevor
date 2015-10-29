@@ -1,14 +1,14 @@
-=== Hired ===
+=== mynameistrevor ===
 Contributors: modernthemes
 Tags: white, light, blue, black, left-sidebar, right-sidebar, fluid-layout, responsive-layout 
 Tested up to: 4.3.1
 
-hired is built with Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+mynameistrevor is built with Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
 
-hired incorporates code from Moesia, Copyright 2014 aThemes
+mynameistrevor incorporates code from Moesia, Copyright 2014 aThemes
 Moesia is distributed under the terms of the GNU GPL
 
-hired bundles the following third-party resources: 
+mynameistrevor bundles the following third-party resources: 
 
 Simple Grid by ThisisDallas Copyright (C) 2013 Dallas Bass 
 Simple Grid is licensed under the MIT License.
@@ -46,11 +46,11 @@ all free stock photos including homepage backgrounds and image used in screensho
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 
-all theme documentation can be found at https://modernthemes.net/hired-documentation/
+all theme documentation can be found at https://modernthemes.net/mynameistrevor-documentation/
 
 == Description ==
 
-Hired is a responsive WordPress theme for the working professional to use for an online CV. Hired inclues a unique layout with toggle content sections that are easy to populate with your working background and accomplishments. Download ModernThemes premium plugins to amplify the functionality and content of your theme.
+mynameistrevor is a responsive WordPress theme for the working professional to use for an online CV. mynameistrevor inclues a unique layout with toggle content sections that are easy to populate with your working background and accomplishments. Download ModernThemes premium plugins to amplify the functionality and content of your theme.
 
 == Changelog ==
 

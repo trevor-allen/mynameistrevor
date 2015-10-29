@@ -1,8 +1,8 @@
 <?php
 /**
- * hired Theme Customizer
+ * mynameistrevor Theme Customizer
  *
- * @package hired 
+ * @package mynameistrevor 
  */
 
 
@@ -11,7 +11,7 @@
  *
  * @since 1.7
  */
-function hired_sanitize_index_content( $content ) {
+function mynameistrevor_sanitize_index_content( $content ) {
 	if ( 'option2' == $content ) {
 		return 'option2';
 	} else {
@@ -20,7 +20,7 @@ function hired_sanitize_index_content( $content ) {
 }
 
 //Checkboxes
-function hired_sanitize_checkbox( $input ) {
+function mynameistrevor_sanitize_checkbox( $input ) {
 	if ( $input == 1 ) {
 		return 1;
 	} else {
@@ -29,19 +29,19 @@ function hired_sanitize_checkbox( $input ) {
 }
 
 //Integers
-function hired_sanitize_int( $input ) {
+function mynameistrevor_sanitize_int( $input ) {
     if( is_numeric( $input ) ) {
         return intval( $input );
     }
 }
 
 //Text
-function hired_sanitize_text( $input ) {
+function mynameistrevor_sanitize_text( $input ) {
     return wp_kses_post( force_balance_tags( $input ) );
 }
 
 //sanitize widget content
-function hired_sanitize_widget_content( $input ) { 
+function mynameistrevor_sanitize_widget_content( $input ) { 
     $valid = array( 
         'option1' => '1 Column',
 		'option2' => '2 Columns',
@@ -57,7 +57,7 @@ function hired_sanitize_widget_content( $input ) {
 } 
 
 //Menu
-function hired_sanitize_menu_toggle_display( $input ) {
+function mynameistrevor_sanitize_menu_toggle_display( $input ) {
     $valid = array(
       'icon' => '',
       'label' => '',
@@ -72,7 +72,7 @@ function hired_sanitize_menu_toggle_display( $input ) {
 }
 
 //Sanitizes Fonts 
-function hired_sanitize_fonts( $input ) {  
+function mynameistrevor_sanitize_fonts( $input ) {  
     $valid = array(
 			'', 
 			'Open Sans:400italic,700italic,400,700' => 'Open Sans',
@@ -116,5 +116,5 @@ function hired_sanitize_fonts( $input ) {
 
 
 //No sanitize - empty function for options that do not require sanitization -> to bypass the Theme Check plugin
-function hired_no_sanitize( $input ) {
+function mynameistrevor_no_sanitize( $input ) {
 }  

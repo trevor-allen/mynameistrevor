@@ -2,14 +2,14 @@
 /**
  * The template for displaying search results pages.
  *
- * @package hired
+ * @package mynameistrevor
  */
 
 get_header(); ?>
 
 	<header class="single-entry-header animated fadeIn delay"> 
     	<div class="single-entry-content animated fadeInLeft delay">
-			<h1 class="entry-title"><?php printf( __( 'Search Results for: %s', 'hired' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+			<h1 class="entry-title"><?php printf( __( 'Search Results for: %s', 'mynameistrevor' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
         </div>
         <div class="header-image-overlay"></div>
 	</header><!-- .entry-header -->

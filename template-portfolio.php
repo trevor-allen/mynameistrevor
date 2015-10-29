@@ -4,7 +4,7 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
 Template Name: Portfolio
- * @package hired
+ * @package mynameistrevor
  */
 
 get_header(); ?>

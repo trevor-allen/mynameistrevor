@@ -10,7 +10,7 @@
  */
 
 /**
- * Set the content width based on the theme's design and stylesheet. 
+ * Set the content width based on the theme's design and stylesheet.
  */
 if ( ! isset( $content_width ) ) {
 	$content_width = 640; /* pixels */
@@ -50,7 +50,7 @@ function mynameistrevor_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	
+
 	add_theme_support( 'post-thumbnails' );
 	add_image_size( 'client-thumb', 250 );
 	add_image_size( 'project-thumb', 450, 450, array( 'center', 'center' ) );
@@ -72,7 +72,7 @@ function mynameistrevor_setup() {
 
 	// Set up the WordPress core custom background feature.
 	add_theme_support( 'custom-background', apply_filters( 'mynameistrevor_custom_background_args', array(
-		'default-color' => 'f1f1f1', 
+		'default-color' => 'f1f1f1',
 		'default-image' => '',
 	) ) );
 }
@@ -82,7 +82,7 @@ add_action( 'after_setup_theme', 'mynameistrevor_setup' );
 
 /*-----------------------------------------------------------------------------------------------------//
 	Register Widgets
-	
+
 	@link http://codex.wordpress.org/Function_Reference/register_sidebar
 -------------------------------------------------------------------------------------------------------*/
 
@@ -96,22 +96,22 @@ function mynameistrevor_widgets_init() {
 		'after_widget'  => '</aside>',
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
-	) ); 
+	) );
 	register_sidebar( array(
-		'name'          => esc_html__( 'Social Widget Area', 'mynameistrevor' ), 
-		'id'            => 'social-widget-area', 
+		'name'          => esc_html__( 'Social Widget Area', 'mynameistrevor' ),
+		'id'            => 'social-widget-area',
 		'description'   => esc_html__( 'Drag the MT - Social Icons widget here.', 'mynameistrevor' ),
 		'before_widget' => '',
-		'after_widget'  => '', 
+		'after_widget'  => '',
 		'before_title'  => '<h3>',
-		'after_title'   => '</h3>', 
+		'after_title'   => '</h3>',
 	) );
-	
-	//Register the sidebar widgets   
-	register_widget( 'mynameistrevor_Video_Widget' ); 
+
+	//Register the sidebar widgets
+	register_widget( 'mynameistrevor_Video_Widget' );
 	register_widget( 'mynameistrevor_Contact_Info' );
 	register_widget( 'mynameistrevor_social' );
-	
+
 }
 add_action( 'widgets_init', 'mynameistrevor_widgets_init' );
 
@@ -123,7 +123,7 @@ add_action( 'widgets_init', 'mynameistrevor_widgets_init' );
 
 function mynameistrevor_scripts() {
 	//wp_enqueue_style( 'mynameistrevor-style', get_stylesheet_uri() );
-	wp_enqueue_style('mynameistrevor-style', get_stylesheet_uri(), false, filemtime(get_stylesheet_directory()));
+	wp_enqueue_style( 'mynameistrevor-style', get_stylesheet_uri(), false, filemtime( get_stylesheet_directory() ) );
 	$headings_font = esc_html(get_theme_mod('headings_fonts'));
 	$body_font = esc_html(get_theme_mod('body_fonts'));
 
@@ -138,34 +138,31 @@ function mynameistrevor_scripts() {
 		wp_enqueue_style( 'mynameistrevor-open-body', '//fonts.googleapis.com/css?family=Montserrat:700');
 	}
 
-	if ( get_theme_mod('mynameistrevor_animate') != 1 ) { 
+	if ( get_theme_mod( 'mynameistrevor_animate' ) != 1 ) {
 
-	wp_enqueue_style( 'mynameistrevor-animate', get_template_directory_uri() . '/css/animate.css' ); 
-	
+		wp_enqueue_style( 'mynameistrevor-animate', get_template_directory_uri() . '/css/animate.css', false, filemtime( get_stylesheet_directory() ) );
+
 	}
 
-	wp_enqueue_style( 'mynameistrevor-menu', get_template_directory_uri() . '/css/menu.css' );
-	
-	wp_enqueue_style( 'mynameistrevor-font-awesome', get_template_directory_uri() . '/fonts/font-awesome.css' );  
-	
-	wp_enqueue_style( 'mynameistrevor-column-clear', get_template_directory_uri() . '/css/mt-column-clear.css' ); 
-
+	wp_enqueue_style( 'mynameistrevor-menu', get_template_directory_uri() . '/css/menu.css', false, filemtime( get_stylesheet_directory() ) );
+	wp_enqueue_style( 'mynameistrevor-font-awesome', get_template_directory_uri() . '/fonts/font-awesome.css' );
+	wp_enqueue_style( 'mynameistrevor-column-clear', get_template_directory_uri() . '/css/mt-column-clear.css', false, filemtime( get_stylesheet_directory() ) ); 
 	wp_enqueue_script( 'mynameistrevor-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'mynameistrevor-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
-	
-	if ( is_page_template( 'template-home.php' ) && get_theme_mod( 'mynameistrevor_home_bg_image' ) ) {  
+
+	if ( is_page_template( 'template-home.php' ) && get_theme_mod( 'mynameistrevor_home_bg_image' ) ) {
 
 	wp_enqueue_script( 'mynameistrevor-backstretch', get_template_directory_uri() . '/js/jquery.backstretch.min.js', array('jquery'), false, true );
 
 	wp_enqueue_script( 'mynameistrevor-backstretch-scripts', get_template_directory_uri() . '/js/backstretch.script.js', array(), false, true );
-	
+
 	}
 
 	wp_enqueue_script( 'mynameistrevor-menu', get_template_directory_uri() . '/js/jPushMenu.js', array('jquery'), false, true );
 
 	wp_enqueue_script( 'mynameistrevor-scripts', get_template_directory_uri() . '/js/mynameistrevor.scripts.js', array(), false, true );
-	
+
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -181,7 +178,7 @@ function mynameistrevor_html5shiv() {
     echo '<script src="' . esc_url( get_template_directory_uri() . '/js/html5shiv.js' ) . '"></script>' . "\n";
     echo '<![endif]-->' . "\n";
 }
-add_action( 'wp_head', 'mynameistrevor_html5shiv' ); 
+add_action( 'wp_head', 'mynameistrevor_html5shiv' );
 
 
 /*-----------------------------------------------------------------------------------------------------//
@@ -205,7 +202,7 @@ require get_template_directory() . '/inc/template-tags.php';
 require get_template_directory() . '/inc/extras.php';
 
 /**
- * Include additional custom admin panel features. 
+ * Include additional custom admin panel features.
  */
 require get_template_directory() . '/panel/functions-admin.php';
 require get_template_directory() . '/panel/theme-admin-page.php';
@@ -215,7 +212,7 @@ require get_template_directory() . '/panel/theme-admin-page.php';
  */
 require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/mynameistrevor-sanitize.php';
-require get_template_directory() . '/inc/mynameistrevor-styles.php'; 
+require get_template_directory() . '/inc/mynameistrevor-styles.php';
 
 /**
  * Load Jetpack compatibility file.
@@ -225,16 +222,16 @@ require get_template_directory() . '/inc/jetpack.php';
 /**
  * Load Jetpack compatibility file.
  */
-require get_template_directory() . '/inc/gfonts.php';  
+require get_template_directory() . '/inc/gfonts.php';
 
 /**
  * Sidebar widget columns
  */
-require get_template_directory() . '/inc/mynameistrevor-sidebar-columns.php'; 
+require get_template_directory() . '/inc/mynameistrevor-sidebar-columns.php';
 
 /**
  * register your custom widgets
- */ 
-require get_template_directory() . "/widgets/contact-info.php"; 
+ */
+require get_template_directory() . "/widgets/contact-info.php";
 require get_template_directory() . "/widgets/video-widget.php";
-require get_template_directory() . "/widgets/widget-mt-social.php"; 
+require get_template_directory() . "/widgets/widget-mt-social.php";

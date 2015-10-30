@@ -81,7 +81,7 @@
 /* Vertical menu that slides from the left or right */
 .cbp-spmenu-left {
   //left: -240px;
-  transform: translateX(-240px);
+  transform: translateX(-480px);
 }
 
 .cbp-spmenu-right {
@@ -90,7 +90,7 @@
 
 .cbp-spmenu-left.menu-open {
   //left: 0px;
-  transform: translateX(0);
+  transform: translateX(-240px);
 }
 
 .cbp-spmenu-right.menu-open {

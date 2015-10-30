@@ -79,15 +79,15 @@
 
 /* Vertical menu that slides from the left or right */
 .cbp-spmenu-left {
-    left: -240px;
+    transform: translateX(-240px);
 }
 
 .cbp-spmenu-right {
-    right: -600px;
+    transform: translateX(-600px);
 }
 
 .cbp-spmenu-left.menu-open {
-    left: 0px;
+    transform: translateX(0);
 }
 
 .cbp-spmenu-right.menu-open {

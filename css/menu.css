@@ -81,7 +81,7 @@
 /* Vertical menu that slides from the left or right */
 .cbp-spmenu-left {
   //left: -240px;
-  transform: translateX(-480px);
+  transform: translateX(-240px);
 }
 
 .cbp-spmenu-right {

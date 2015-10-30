@@ -102,7 +102,7 @@ get_header('home'); ?>
     <div class="bio-content">
 
 			<?php if ( get_theme_mod( 'mynameistrevor_about_me_title' ) ) : ?>
-             	<h3><?php echo wp_kses_post( get_theme_mod( 'mynameistrevor_about_me_title' )); ?></h3>
+             	<h2><?php echo wp_kses_post( get_theme_mod( 'mynameistrevor_about_me_title' )); ?></h2>
             <?php endif; ?>
 
             <?php if ( get_theme_mod( 'mynameistrevor_about_me_text' ) ) : ?>

@@ -89,7 +89,8 @@
 }
 
 .cbp-spmenu-left.menu-open {
-  left: 0px;
+  //left: 0px;
+  transform: translateX(0);
 }
 
 .cbp-spmenu-right.menu-open {

@@ -24,7 +24,11 @@ get_header(); ?>
 			<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
 			<div class="entry-meta">
-				<?php mynameistrevor_posted_on(); ?> 
+				<?php if( get_field('address') ): ?>
+
+				<a target="_blank" href="<?php the_field('address'); ?>"><button>View Website</button></a>
+
+				<?php endif; ?>
 			</div><!-- .entry-meta -->
         </div>
         <div class="header-image-overlay"></div>
@@ -45,7 +49,7 @@ get_header(); ?>
 	<div id="primary" class="content-area shortcodes">
 		<main id="main" class="site-main" role="main">
 
-			<a target="_blank" href="<?php the_field('address'); ?>"><button>View Website</button></a>
+<a href="http://mynameistrevor.com/portfolio/">Back to Portfolio</a>
 
 			<?php get_template_part( 'content', 'single' ); ?>
 

@@ -29,53 +29,53 @@ get_header(); ?>
 	<div id="tab-content1" class="tab-content">
 		<div id="masonry-container">
 
-<?php
+		<?php
 
-// The Query
-$the_query = new WP_Query( array(
-'post_type' => 'portfolio',
-'category_name' => 'Website'
-) );
+		// The Query
+		$the_query = new WP_Query(array(
+			'post_type' => 'portfolio',
+			'category_name' => 'Website'
+		));
 
-// The Loop
-if ( $the_query->have_posts() ) {
-	while ( $the_query->have_posts() ) {
-		$the_query->the_post();
-		get_template_part( 'content', 'portfolio' );
-	}
-} else {
-	// no posts found
-}
-/* Restore original Post Data */
-wp_reset_postdata();
-wp_reset_query();
-?>
+		// The Loop
+		if ( $the_query->have_posts() ) {
+			while ( $the_query->have_posts() ) {
+				$the_query->the_post();
+				get_template_part( 'content', 'portfolio' );
+			}
+		} else {
+		// no posts found
+		}
+		/* Restore original Post Data */
+		wp_reset_postdata();
+		wp_reset_query();
+		?>
 		</div>
 	</div> <!-- #tab-content1 -->
 
 	<div id="tab-content2" class="tab-content">
 		<div id="masonry-container">
-<?php
+		<?php
 
-// The Query
-$the_query = new WP_Query( array(
-'post_type' => 'portfolio',
-'category_name' => 'design'
-) );
+		// The Query
+		$the_query = new WP_Query(array(
+			'post_type' => 'portfolio',
+			'category_name' => 'design'
+		));
 
-// The Loop
-if ( $the_query->have_posts() ) {
-        while ( $the_query->have_posts() ) {
-                $the_query->the_post();
-                get_template_part( 'content', 'portfolio' );
-        }
-} else {
-        // no posts found
-}
-/* Restore original Post Data */
-wp_reset_postdata();
-wp_reset_query();
-?>
+		// The Loop
+		if ( $the_query->have_posts() ) {
+		        while ( $the_query->have_posts() ) {
+                		$the_query->the_post();
+		                get_template_part( 'content', 'portfolio' );
+	        }
+		} else {
+	        // no posts found
+		}
+		/* Restore original Post Data */
+		wp_reset_postdata();
+		wp_reset_query();
+		?>
 		</div>
 	</div> <!-- #tab-content2 -->
 </div> <!-- .tabs -->

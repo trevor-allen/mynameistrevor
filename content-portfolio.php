@@ -6,11 +6,17 @@
 
 <article id="post-<?php the_ID(); ?>" <?php //post_class(); ?> class="masonry-post">
 	<header class="entry-header">
-    	<?php the_post_thumbnail('large'); ?>
+		<a href="<?php the_permalink(); ?>">
+    		<?php
+		if( has_post_thumbnail() ) {
+			the_post_thumbnail('project-thumb');
+		}
+		?>
+		</a>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-    	<?php the_title( sprintf( '<h1 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h1>' ); ?>
+    	<?php the_title( sprintf( '<h4 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h4>' ); ?>
 
 		<?php if ( 'post' == get_post_type() ) : ?>
 		<div class="entry-meta">

@@ -1094,6 +1094,7 @@ button.mynameistrevor-about-button:hover {
 	width: 30.3333%;
 	margin-right: 3%;
 	float: left;
+	box-shadow: 2px 3px 8px rgba(0,0,0,.1);
 }
 
 .blog-archive-container .masonry-post h1.entry-title {
@@ -1136,7 +1137,7 @@ button.mynameistrevor-about-button:hover {
 	background-size: cover;
 	padding: 120px 110px 80px 200px;
 	color: #fff;
-	z-index: -1;
+	z-index: 1;
 }
 
 .single-entry-header .entry-meta {
@@ -1928,7 +1929,6 @@ h2.services-title {
 	list-style: none;
 	padding: 0;
 	margin: 0 auto;
-	border-bottom: 4px solid #ccc;
 }
 
 .tabs:after {

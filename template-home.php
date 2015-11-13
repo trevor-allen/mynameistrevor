@@ -23,7 +23,7 @@ get_header('home'); ?>
              	<h1><?php echo wp_kses_post( get_theme_mod( 'mynameistrevor_home_title' )); ?></h1>
             <?php endif; ?>
 			<?php if ( get_theme_mod( 'mynameistrevor_home_subtitle' ) ) : ?>
-				<h4><?php echo wp_kses_post( get_theme_mod( 'mynameistrevor_home_subtitle' )); ?></h4>
+				<h4 style="margin-top: 0;"><?php echo wp_kses_post( get_theme_mod( 'mynameistrevor_home_subtitle' )); ?></h4>
 			<?php endif; ?>
 
             <ul class="home-details">
@@ -66,10 +66,13 @@ get_header('home'); ?>
 
 			?>
 
-            <?php if ( get_theme_mod( 'mynameistrevor_home_button_text_one' ) ) : ?>
-            	<button class="toggle-menu menu-right push-body"><?php echo wp_kses_post( get_theme_mod( 'mynameistrevor_home_button_text_one' )); ?></button>
-            <?php endif; ?>
+            <?php if ( !get_theme_mod( 'mynameistrevor_home_button_text_one' ) ) : ?>
+            	<button class="toggle-menu menu-right push-body"><?php echo wp_kses_post( get_theme_mod( 'mynameistrevor_home_button_text_one' )); ?>
 
+				</button>
+
+            <?php endif; ?>
+<button><a href="http://mynameistrevor.com/about">About</a></button>
             <?php if ( get_theme_mod( 'mynameistrevor_button_two_url' ) ) : ?>
             	<a href="<?php echo esc_url( $mynameistrevor_button_two_url ); ?>">
                 	<?php if ( get_theme_mod( 'mynameistrevor_home_button_text_two' ) ) : ?>

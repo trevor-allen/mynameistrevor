@@ -72,7 +72,7 @@ get_header('home'); ?>
 				</button>
 
             <?php endif; ?>
-<button><a href="http://mynameistrevor.com/about">About</a></button>
+<button><a style="color: white;" href="http://mynameistrevor.com/about">About</a></button>
             <?php if ( get_theme_mod( 'mynameistrevor_button_two_url' ) ) : ?>
             	<a href="<?php echo esc_url( $mynameistrevor_button_two_url ); ?>">
                 	<?php if ( get_theme_mod( 'mynameistrevor_home_button_text_two' ) ) : ?>

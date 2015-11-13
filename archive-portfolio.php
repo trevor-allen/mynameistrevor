@@ -25,6 +25,10 @@ get_header(); ?>
 		<label for="tab2">
 			<i class="fa fa-magic"></i><span>DESIGN</span>
 		</label>
+        <input type="radio" name="tabs" id="tab3">
+                <label for="tab3">
+                        <i class="fa fa-github"></i><span>ACTIVITY</span>
+                </label>
 
 	<div id="tab-content1" class="tab-content">
 		<div id="masonry-container">
@@ -78,6 +82,11 @@ get_header(); ?>
 		?>
 		</div>
 	</div> <!-- #tab-content2 -->
+        <div id="tab-content3" class="tab-content">
+                <div id="masonry-container">
+<?php echo do_shortcode("[wp-rss-aggregator]"); ?>
+</div>
+</div>
 </div> <!-- .tabs -->
             </div>
 

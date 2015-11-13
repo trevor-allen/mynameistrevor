@@ -122,8 +122,10 @@ add_action( 'widgets_init', 'mynameistrevor_widgets_init' );
 
 
 function mynameistrevor_scripts() {
-	//wp_enqueue_style( 'mynameistrevor-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'mynameistrevor-style', get_stylesheet_uri(), false, filemtime( get_stylesheet_directory() ) );
+	wp_enqueue_style( 'mynameistrevor-style-main', get_stylesheet_directory_uri() . '/css/main.css', false, filemtime( get_stylesheet_directory() ) );
+
+
 	$headings_font = esc_html(get_theme_mod('headings_fonts'));
 	$body_font = esc_html(get_theme_mod('body_fonts'));
 

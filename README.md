@@ -1,12 +1,8 @@
 === mynameistrevor ===
-Contributors: modernthemes
 Tags: white, light, blue, black, left-sidebar, right-sidebar, fluid-layout, responsive-layout 
 Tested up to: 4.3.1
 
 mynameistrevor is built with Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
-
-mynameistrevor incorporates code from Moesia, Copyright 2014 aThemes
-Moesia is distributed under the terms of the GNU GPL
 
 mynameistrevor bundles the following third-party resources: 
 

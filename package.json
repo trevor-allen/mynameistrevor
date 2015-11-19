@@ -4,6 +4,7 @@
   "description": "=== mynameistrevor === Tags: white, light, blue, black, left-sidebar, right-sidebar, fluid-layout, responsive-layout  Tested up to: 4.3.1",
   "main": "gulpfile.js",
   "dependencies": {
+    "browser-sync": "^2.10.0",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-concat": "^2.6.0",

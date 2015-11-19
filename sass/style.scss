@@ -1,0 +1,54 @@
+/*
+Theme Name: mynameistrevor
+Theme URI: https://mynameistrevor.com
+Author: Trevor Allen
+Author URI: https://mynameistrevor.com
+Description: My personal portfolio and blog.
+Version: 1.0
+Text Domain: mynameistrevor
+Tags: white, light, blue, black, left-sidebar, right-sidebar, fluid-layout, responsive-layout
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+built with Underscores http://underscores.me/, (C) 2012-2014 Automattic, Inc.
+
+the following third-party resources were used in this theme:
+
+Simple Grid by ThisisDallas Copyright (C) 2013 Dallas Bass
+Simple Grid is licensed under the MIT License.
+http://thisisdallas.github.io/Simple-Grid/
+
+Font Awesome by Dave Gandy
+Font Awesome is licensed under the following: (Font: SIL OFL 1.1, CSS: MIT License)
+http://fortawesome.github.io/Font-Awesome/
+
+Animate-plus.js by Telmo Marques Copyright (c) 2014
+Animate-plus.js is licensed under the MIT License.
+https://github.com/telmomarques/animate-plus.js
+
+Masonry by the Masonry Team Copyright (c) 2011-2012
+Masonry is licensed under the terms of the GNU GPLv2
+https://github.com/Masonry
+
+imagesLoaded by desandro Copyright (c) 2010-2015
+imagesLoaded is licensed under the MIT License.
+https://github.com/desandro/imagesloaded
+
+Backstretch by Scott Robbin Copyright (c) 2013
+Backstretch is licensed under the MIT License.
+https://github.com/srobbin/jquery-backstretch
+
+The HTML5 Shiv by aFarkas Copyright (c) 2014 Alexander Farkas (aFarkas).
+The HTML5 Shiv is licensed under the terms of the GNU GPLv2
+https://github.com/aFarkas/html5shiv
+
+jPushMenu by takien
+https://github.com/takien/jPushMenu
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
+*/
+@import "animate";
+@import "main";
+@import "menu";
+@import "mt-column-clear";

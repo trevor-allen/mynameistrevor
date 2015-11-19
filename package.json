@@ -1,0 +1,28 @@
+{
+  "name": "mynameistrevor",
+  "version": "1.0.0",
+  "description": "=== mynameistrevor === Tags: white, light, blue, black, left-sidebar, right-sidebar, fluid-layout, responsive-layout  Tested up to: 4.3.1",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-load-plugins": "^1.1.0",
+    "gulp-sass": "^2.1.0",
+    "gulp-uglify": "^1.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trevoristall/mynameistrevor.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trevoristall/mynameistrevor/issues"
+  },
+  "homepage": "https://github.com/trevoristall/mynameistrevor#readme"
+}
